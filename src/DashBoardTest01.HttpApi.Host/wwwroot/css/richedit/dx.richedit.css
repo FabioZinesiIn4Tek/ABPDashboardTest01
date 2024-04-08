@@ -1,0 +1,3095 @@
+.dxreControl {
+  font: 12px Tahoma, Geneva, sans-serif;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  /* Start Workaround - Replace it with the appropriate css class from Devexteme (alternative-background-color)*/
+  /* End Workaround - Replace it with the appropriate css class from Devexteme (alternative-background-color)*/
+}
+.dxreControl.NUSA_focusedElement {
+  border-color: #51d851 !important;
+}
+.dxreControl .dxreView {
+  background-color: #f7f7f7;
+}
+.dxreControl .dxrePage {
+  border: 1px solid #aaa;
+}
+.dxreControl .dxreRulerWrapper {
+  padding-top: 2px;
+  background-color: #f7f7f7;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-columnHandleRightPart,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-columnHandleLeftPart {
+  width: 5px;
+  background-color: #bcb8b8;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerTableColumnSeparatorHandle {
+  height: 12px;
+  background-color: #d3d3d3;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerTableColumnSeparatorHandle div {
+  margin-top: 2px;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerDivisions {
+  height: 12px;
+  background-color: #fff;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerDivisions div {
+  height: 12px;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerDivisions .dxre-rulerMinorDivision,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerDivisions .dxre-rulerMajorDivision {
+  border-left: 1px solid #a3a3a3;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerDivisions .dxre-rulerNumberDivision {
+  color: #4e4e4e;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginLeftPanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginRightPanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginLeftHandlePanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginRightHandlePanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-columnHandle,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-columnHandle > div {
+  height: 12px;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginLeftPanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginRightPanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginLeftHandlePanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-rulerMarginRightHandlePanel,
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-columnHandle {
+  background-color: #d3d3d3;
+}
+.dxreControl .dxreRulerWrapper .dxreRuler .dxre-leftIndentDragHandleBody {
+  background-color: #fff;
+  border: 1px solid #929292;
+  border-top: none;
+  height: 6px;
+}
+.dxreControl .dxreRulerWrapper .dxre-rulertabAlignBox {
+  background-color: #d3d3d3;
+}
+.dxreControl .dxreRulerWrapper .dxre-rulertabAlignBox > div {
+  background-color: #fff;
+}
+.dxreControl .dxreRulerLine {
+  border-left: 1px dashed #717171;
+}
+.dxreControl .dxreRulerLine.table {
+  border-left: 1px solid #599eff;
+}
+.dxreControl[class*="generic.light"] .dxreView,
+.dxreControl[class*="generic.light"] .dxreRulerWrapper {
+  background-color: #f7f7f7;
+}
+.dxreControl[class*="generic.dark"] .dxreView,
+.dxreControl[class*="generic.dark"] .dxreRulerWrapper {
+  background-color: #323232;
+}
+.dxreControl[class*="generic.contrast"] .dxreView,
+.dxreControl[class*="generic.contrast"] .dxreRulerWrapper {
+  background-color: #000;
+}
+.dxreControl[class*="generic.carmine"] .dxreView,
+.dxreControl[class*="generic.carmine"] .dxreRulerWrapper {
+  background-color: #fafafa;
+}
+.dxreControl[class*="generic.darkmoon"] .dxreView,
+.dxreControl[class*="generic.darkmoon"] .dxreRulerWrapper {
+  background-color: #4c5d7b;
+}
+.dxreControl[class*="generic.darkmoon"] .dxreView,
+.dxreControl[class*="generic.darkmoon"] .dxreRulerWrapper {
+  background-color: #4c5d7b;
+}
+.dxreControl[class*="generic.softblue"] .dxreView,
+.dxreControl[class*="generic.softblue"] .dxreRulerWrapper {
+  background-color: #f7f7f7;
+}
+.dxreControl[class*="generic.darkviolet"] .dxreView,
+.dxreControl[class*="generic.darkviolet"] .dxreRulerWrapper {
+  background-color: #1e1e28;
+}
+.dxreControl[class*="generic.greenmist"] .dxreView,
+.dxreControl[class*="generic.greenmist"] .dxreRulerWrapper {
+  background-color: #ededed;
+}
+.dxreControl[class*=material][class*=light] .dxreView,
+.dxreControl[class*=material][class*=light] .dxreRulerWrapper {
+  background-color: #f7f7f7;
+}
+.dxreControl[class*=material][class*=dark] .dxreView,
+.dxreControl[class*=material][class*=dark] .dxreRulerWrapper {
+  background-color: #2f2f38;
+}
+.dxreControl .dxreQuickSearchPanel {
+  border-width: 1px;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 0.5em;
+}
+.dxreControl .dxreQuickSearchPanel .dxreSearchResult {
+  cursor: default;
+}
+.dxreControl .dxreQuickSearchPanel .dxreSearchResult .dx-button-content {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dxreControl .dxreLoadingPanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.dxreControl .dxreLoadingPanel .lp {
+  position: absolute;
+  z-index: 100;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+.dxreControl .dxreLoadingPanel .lp:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #555;
+  border-color: #555 transparent #555 transparent;
+  animation: dxreLoading 1.2s linear infinite;
+}
+@keyframes dxreLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.dxreControl .dxreTableBorderLine {
+  background-color: #599eff;
+}
+
+/* AutoScroll */
+.dxreAutoScroll {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojQzBDMEMwO30KPC9zdHlsZT4KPGc+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTAsMEw0LDZoMTJMMTAsMHogTTEwLDIwbDYtNkg0TDEwLDIweiBNOCwxMGMwLDEuMSwwLjksMiwyLDJzMi0wLjksMi0ycy0wLjktMi0yLTJTOCw4LjksOCwxMHoiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K");
+  z-index: 165;
+}
+
+.dxreAutoScrollCursor {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  z-index: 166;
+}
+
+.dxreAutoScrollCursorN {
+  cursor: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Il94MzFfXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIgoJIHZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9Il94MzFfIiBkPSJNMTAsMEw0LDZoMTJMMTAsMHogTTEyLDEwYzAtMS4xLTAuOS0yLTItMnMtMiwwLjktMiwyczAuOSwyLDIsMlMxMiwxMS4xLDEyLDEweiIvPgo8L3N2Zz4K") 10 10, n-resize;
+}
+
+.dxreAutoScrollCursorNS {
+  cursor: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiCgkgdmlld0JveD0iMCAwIDIwIDIwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMCAyMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDt9Cjwvc3R5bGU+CjxnPgoJPGc+CgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwLDBMNCw2aDEyTDEwLDB6IE0xMCwyMGw2LTZINEwxMCwyMHogTTgsMTBjMCwxLjEsMC45LDIsMiwyczItMC45LDItMnMtMC45LTItMi0yUzgsOC45LDgsMTB6Ii8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==") 10 10, ns-resize;
+}
+
+.dxreAutoScrollCursorS {
+  cursor: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9Il94MzFfXzFfIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIgoJIHZpZXdCb3g9IjAgMCAyMCAyMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjAgMjA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggaWQ9Il94MzFfIiBkPSJNMTAsMjBsNi02SDRMMTAsMjB6IE04LDEwYzAsMS4xLDAuOSwyLDIsMnMyLTAuOSwyLTJzLTAuOS0yLTItMlM4LDguOSw4LDEweiIvPgo8L3N2Zz4K") 10 10, s-resize;
+}
+
+/* AutoScroll */
+/* Bootstrap correction */
+.dxreMeasurer *,
+.dxreRulerWrapper div {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Bootstrap correction */
+/* Cursor */
+.dxreCursorDefault .dxrePage {
+  cursor: default;
+}
+
+.dxreCursorNoDrop .dxrePage {
+  cursor: no-drop;
+}
+
+.dxreCursorCopy .dxrePage {
+  cursor: copy;
+}
+
+.dxreCursorNResize .dxrePage {
+  cursor: n-resize;
+}
+
+.dxreCursorSResize .dxrePage {
+  cursor: s-resize;
+}
+
+.dxreCursorWResize .dxrePage {
+  cursor: w-resize;
+}
+
+.dxreCursorEResize .dxrePage {
+  cursor: e-resize;
+}
+
+.dxreCursorEWResize .dxrePage {
+  cursor: ew-resize;
+}
+
+.dxreCursorNWResize .dxrePage {
+  cursor: nw-resize;
+}
+
+.dxreCursorNEResize .dxrePage {
+  cursor: ne-resize;
+}
+
+.dxreCursorNSResize .dxrePage {
+  cursor: ns-resize;
+}
+
+.dxreCursorSEResize .dxrePage {
+  cursor: se-resize;
+}
+
+.dxreCursorSWResize .dxrePage {
+  cursor: sw-resize;
+}
+
+/* Cursor */
+/* HeaderFooter */
+.dxreHeaderInfo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  z-index: 161;
+  border-top: #b9b9b9 1px dashed;
+}
+.dxreHeaderInfo b {
+  border: #b9b9b9 1px solid;
+  margin: 0 5px;
+  padding: 3px 5px;
+  background: #CCCCCC;
+  display: block;
+  font-weight: normal;
+  float: right;
+}
+.dxreHeaderInfo b:first-child {
+  float: left;
+}
+
+.dxreFooterInfo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  z-index: 161;
+  border-bottom: #b9b9b9 1px dashed;
+}
+.dxreFooterInfo b {
+  border: #b9b9b9 1px solid;
+  margin: 0 5px;
+  padding: 3px 5px;
+  background: #CCCCCC;
+  display: block;
+  font-weight: normal;
+  float: right;
+}
+.dxreFooterInfo b:first-child {
+  float: left;
+}
+
+/* HeaderFooter */
+/* Layout */
+.dxrePage {
+  position: relative;
+  background: white;
+  margin: 15px auto;
+  cursor: text;
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.dxWebKitTouchUI .dxrePage {
+  overflow: scroll;
+}
+
+.dxreSimpleView {
+  padding: 0px !important;
+}
+
+.dxreSimplePage {
+  box-shadow: none !important;
+  border-width: 0 !important;
+  margin: 0;
+  width: 100% !important;
+}
+
+.dxrePageArea {
+  position: absolute;
+  overflow: visible;
+}
+
+.dxreTextBoxArea {
+  cursor: text;
+}
+
+.dxreColumn {
+  position: absolute;
+  overflow: visible;
+  cursor: text;
+  user-select: none;
+}
+
+.dxreRow {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  font-size: 0;
+  user-select: none;
+}
+
+.dxreBox {
+  position: absolute;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.dxreBoxSpace {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+}
+.dxreBoxSpace img {
+  vertical-align: bottom;
+}
+
+.dxreHiddenBox {
+  border-bottom: 1px dotted gray;
+}
+
+.dxreTextBoxBg {
+  position: absolute;
+}
+
+.dxreBoxBg {
+  position: absolute;
+  display: block;
+}
+
+.dxrePic {
+  cursor: move;
+}
+
+.dxreBlackout > .dxrePic {
+  cursor: unset;
+}
+
+.dxreParFrame {
+  position: absolute;
+}
+
+.dxreStartBookmark {
+  border: 2px solid #b9b9b9;
+  position: absolute;
+  box-sizing: border-box;
+  border-right: none;
+}
+
+.dxreEndBookmark {
+  border: 2px solid #b9b9b9;
+  position: absolute;
+  box-sizing: border-box;
+  border-left: none;
+}
+
+.dxreFieldBg {
+  position: absolute;
+  display: inline-block;
+}
+
+.dxreFieldBoxLevel1 {
+  background: #cecece;
+}
+
+.dxreFieldBoxLevel2 {
+  background: #b9b9b9;
+}
+
+.dxreFieldBoxLevel3 {
+  background: #a0a0a0;
+}
+
+.dxreAnchor {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQklEQVR4XuWQMQoAMAwC+/9PX+lUaIaTQKYKDoqRJGsaHPaHL5gu8BM+KKBRwCNqWDwk6L6Z7vlqVdtjiShAmCEd3Df3Q73X8NMsAAAAAElFTkSuQmCC");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 154;
+}
+
+.dxreSelectedTextBox {
+  transform: none !important;
+}
+
+.dxreAncPic {
+  position: absolute;
+}
+
+/* Table */
+.dxreTable {
+  position: absolute;
+}
+
+.dxreTableBrd {
+  position: absolute;
+}
+
+.dxreTableRowBg {
+  position: absolute;
+}
+
+.dxreTableCellBg {
+  position: absolute;
+}
+
+.dxreTableColumnCursor {
+  position: absolute;
+  background-color: transparent;
+  cursor: col-resize;
+  width: 4px;
+}
+
+.dxreTableRowCursor {
+  position: absolute;
+  background-color: transparent;
+  cursor: row-resize;
+  height: 4px;
+}
+
+.dxreTableBorderLine {
+  position: absolute;
+  z-index: 155;
+}
+
+.dxreTblSelector {
+  position: absolute;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTIgMTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyIDEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAyMDIwMjt9Cgkuc3Qxe29wYWNpdHk6MC41O2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6IzAyMDIwMjt9Cjwvc3R5bGU+CjxwYXRoIGlkPSJfeDMyXyIgY2xhc3M9InN0MCIgZD0iTTksMTF2LTFoMVY5aDF2Mkg5eiBNMTAsNmgxdjJoLTFWNnogTTEwLDRIOVYzaDJ2MmgtMVY0eiBNNiwxMGgydjFINlYxMHogTTYsM2gydjFINlYzeiBNNSw0SDR2MUgzCglWM2gyVjR6IE00LDhIM1Y2aDFWOHogTTQsMTBoMXYxSDNWOWgxVjEweiIvPgo8cG9seWdvbiBpZD0iX3gzMV8iIGNsYXNzPSJzdDEiIHBvaW50cz0iMSwxIDEsOCAyLDggMiwyIDgsMiA4LDEgIi8+Cjwvc3ZnPgo=");
+  cursor: pointer;
+  z-index: 163;
+}
+
+/* Table */
+/* QuickSearch */
+.dxreQuickSearch {
+  position: relative;
+}
+
+.dxreQuickSearchPanelWrapper {
+  position: absolute;
+  right: 20px;
+  top: -1px;
+  z-index: 164;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.dxreNotInternalRibbon .dxreQuickSearchPanelWrapper {
+  top: 0px;
+}
+
+.dxreQuickSearchPanel {
+  display: inline-block;
+}
+.dxreQuickSearchPanel .dxreQuickSearchButtonEdit {
+  float: left;
+}
+.dxreQuickSearchPanel .dxreQuickSearchButtonEdit td.dxic {
+  position: relative;
+}
+.dxreQuickSearchPanel span.dxreSearchResult {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 5px;
+  color: #acacac;
+  background-color: #FFFFFF;
+}
+
+/* QuickSearch */
+/* Ruler */
+.dxreRulerLine {
+  width: 0;
+  z-index: 100;
+  position: absolute;
+  display: none;
+}
+
+.dxreRulerWrapper {
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+}
+.dxreRulerWrapper .dxre-rulertabAlignBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dxreRulerWrapper .dxre-rulertabAlignBox div {
+  position: absolute;
+}
+
+.dxreRulerWrapper .dxreRuler {
+  overflow: hidden;
+  position: relative;
+}
+.dxreRuler .dxre-columnHandle {
+  position: absolute;
+  z-index: 1;
+  cursor: e-resize;
+}
+.dxreRuler .dxre-columnHandle > div {
+  position: absolute;
+}
+.dxreRuler .dxre-leftIndentDragHandleBody {
+  box-sizing: border-box;
+}
+.dxreRuler .dxre-rulerTableColumnSeparatorHandle {
+  position: absolute;
+}
+.dxreRuler .dxre-rulerTableColumnSeparatorHandle > div {
+  position: absolute;
+  z-index: 1;
+}
+.dxreRuler .dxre-columnHandleLeftPart {
+  left: 0;
+}
+.dxreRuler .dxre-columnHandleRightPart {
+  right: 0;
+}
+.dxreRuler .dxreTabDragHandle,
+.dxreRuler .dxreFirstLineIndentDragHandle,
+.dxreRuler .dxreRightIndentDragHandle,
+.dxreRuler .dxreLeftIndentDragHandle {
+  position: absolute;
+  z-index: 2;
+}
+.dxreRuler .dxre-rulerDivisions {
+  position: absolute;
+}
+.dxreRuler .dxre-rulerDivisions > div {
+  z-index: 1;
+  position: absolute;
+  box-sizing: border-box;
+}
+.dxreRuler .dxre-rulerDivisions .dxre-rulerNumberDivision {
+  font-size: 10px;
+  line-height: 10px;
+}
+.dxTouchUI .dxreRuler .dxre-rulerDivisions .dxre-rulerNumberDivision {
+  line-height: 12px;
+}
+.dxreRuler .dxre-rulerDivisions .dxre-rulerNumberDivision > div {
+  position: absolute;
+  width: 100%;
+  left: -50%;
+  text-align: center;
+}
+.dxreRuler .dxre-rulerMarginRightHandlePanel, .dxreRuler .dxre-rulerMarginLeftHandlePanel {
+  position: absolute;
+  z-index: 1;
+  cursor: e-resize;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==") !important;
+}
+.dxreRuler .dxre-rulerMarginLeftHandlePanel {
+  left: 0;
+}
+.dxreRuler .dxre-rulerMarginRightHandlePanel {
+  right: 0;
+}
+.dxreRuler .dxre-rulerMarginLeftPanel {
+  position: absolute;
+  left: 0;
+}
+.dxreRuler .dxre-rulerMarginRightPanel {
+  position: absolute;
+  right: 0;
+}
+
+/* Ruler */
+/* Selection */
+.dxreSelRow {
+  position: absolute;
+  background: #a7a7a7;
+  opacity: 0.5;
+}
+.dxTouchUI .dxreSelRow {
+  background: #a7a7a7;
+}
+.dxreInFocus .dxreSelRow {
+  background: #76a7fa;
+}
+.dxTouchUI .dxreInFocus .dxreSelRow {
+  background: #76a7fa;
+}
+
+.dxreSelFloatingObjects {
+  z-index: 152;
+}
+
+.dxreSelCursor {
+  position: absolute;
+  opacity: 1;
+  width: 1px;
+  visibility: hidden;
+}
+.dxreInFocus .dxreSelCursor {
+  visibility: visible;
+}
+.dxreInFocus .dxreSelCursor {
+  background: url("data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJMgABACwAAAAAAQABAAACAkQBACH5BAUyAAEALAAAAAABAAEAAAICTAEAOw==");
+}
+.dxTouchUI .dxreInFocus .dxreSelCursor {
+  background: url("data:image/gif;base64,R0lGODlhAQABAIABABVu5P///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJMgABACwAAAAAAQABAAACAkQBACH5BAUyAAEALAAAAAABAAEAAAICTAEAOw==");
+}
+
+.dxreSelCursor.dxreSelNoblink {
+  position: absolute;
+}
+.dxreInFocus .dxreSelCursor.dxreSelNoblink {
+  background: #000000;
+}
+.dxTouchUI .dxreInFocus .dxreSelCursor.dxreSelNoblink {
+  background: #156ee4;
+}
+
+.dxreSelSearch {
+  position: absolute;
+  background: #FFFF00;
+  opacity: 0.5;
+}
+.dxTouchUI .dxreSelSearch {
+  background: #FFFF00;
+}
+.dxreInFocus .dxreSelSearch {
+  background: #FFFF00;
+}
+.dxTouchUI .dxreInFocus .dxreSelSearch {
+  background: #FFFF00;
+}
+
+.dxreSelRangePerm {
+  position: absolute;
+}
+
+.dxreSelMisspelled {
+  position: absolute;
+  background: url("data:image/gif;base64,R0lGODlhBAAGAIABAP8AAP///yH5BAEAAAEALAAAAAAEAAYAAAIHjI8GuBtbAAA7") bottom;
+  background-repeat: repeat-x;
+  padding-bottom: 4px;
+  box-sizing: content-box;
+}
+
+.dxreSelBar {
+  z-index: 153;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: white;
+  visibility: hidden;
+}
+.dxreSelBar:after {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  content: "";
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 50%;
+  border: 2px solid #bbd3fd;
+}
+.dxreInFocus .dxreSelBar {
+  visibility: visible;
+}
+
+/* Selection */
+/* ShapeResizeBox */
+.dxreResBox {
+  position: absolute;
+  cursor: move;
+}
+.dxreResBox.dxreResBoxTextBoxArea {
+  cursor: text;
+}
+.dxreResBox.dxreResBoxRotated {
+  z-index: 162;
+}
+.dxreResBoxCornerLineN {
+  position: absolute;
+  z-index: 158;
+  cursor: move;
+  width: 100%;
+  height: 5px;
+  top: 0px;
+  border-top: 1px solid #5A93D3;
+}
+.dxreResBoxCornerLineW {
+  position: absolute;
+  z-index: 158;
+  cursor: move;
+  width: 5px;
+  height: 100%;
+  left: 0px;
+  border-left: 1px solid #5A93D3;
+}
+.dxreResBoxCornerLineE {
+  position: absolute;
+  z-index: 158;
+  cursor: move;
+  width: 5px;
+  height: 100%;
+  right: 0px;
+  border-right: 1px solid #5A93D3;
+}
+.dxreResBoxCornerLineS {
+  position: absolute;
+  z-index: 158;
+  cursor: move;
+  width: 100%;
+  height: 5px;
+  bottom: 0px;
+  border-bottom: 1px solid #5A93D3;
+}
+.dxreResBox .dxreResBoxRotation {
+  position: absolute;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+  z-index: 160;
+  width: 9px;
+  height: 9px;
+  margin-top: -6px;
+  margin-left: -6px;
+  border-radius: 5px;
+  background-color: #88E43A;
+  left: 50%;
+  top: -20px;
+  cursor: pointer;
+  display: none;
+}
+.dxTouchUI .dxreResBox .dxreResBoxRotation {
+  top: -30px;
+  width: 15px;
+  height: 15px;
+  margin-top: -9px;
+  margin-left: -9px;
+  border-radius: 50%;
+}
+.dxreResBox .dxreResBoxRotationLine {
+  position: absolute;
+  z-index: 157;
+  background-color: #5A93D3;
+  left: 50%;
+  top: -16px;
+  width: 1px;
+  height: 10px;
+  margin-left: -1px;
+  cursor: text;
+  display: none;
+}
+.dxTouchUI .dxreResBox .dxreResBoxRotationLine {
+  top: -26px;
+  height: 20px;
+}
+
+.dxreResBox.dxreResBoxAnchored .dxreResBoxRotation,
+.dxreResBox.dxreResBoxAnchored .dxreResBoxRotationLine {
+  display: block;
+}
+
+.dxreResBoxCornerElemTouchN {
+  position: absolute;
+  cursor: n-resize;
+  left: 50%;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchE {
+  position: absolute;
+  cursor: e-resize;
+  left: 100%;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: -8px;
+  margin-top: -9px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchS {
+  position: absolute;
+  cursor: s-resize;
+  left: 50%;
+  top: 100%;
+  width: 15px;
+  height: 15px;
+  margin-left: -9px;
+  margin-top: -8px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchW {
+  position: absolute;
+  cursor: w-resize;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchNE {
+  position: absolute;
+  cursor: ne-resize;
+  left: 100%;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  margin-left: -8px;
+  margin-top: -9px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchSE {
+  position: absolute;
+  cursor: se-resize;
+  left: 100%;
+  top: 100%;
+  width: 15px;
+  height: 15px;
+  margin-left: -8px;
+  margin-top: -8px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchSW {
+  position: absolute;
+  cursor: sw-resize;
+  left: 0;
+  top: 100%;
+  width: 15px;
+  height: 15px;
+  margin-left: -9px;
+  margin-top: -8px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemTouchNW {
+  position: absolute;
+  cursor: nw-resize;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemN {
+  position: absolute;
+  cursor: n-resize;
+  left: 50%;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemE {
+  position: absolute;
+  cursor: e-resize;
+  left: 100%;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  margin-left: -5px;
+  margin-top: -6px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemS {
+  position: absolute;
+  cursor: s-resize;
+  left: 50%;
+  top: 100%;
+  width: 9px;
+  height: 9px;
+  margin-left: -6px;
+  margin-top: -5px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemW {
+  position: absolute;
+  cursor: w-resize;
+  left: 0;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemNE {
+  position: absolute;
+  cursor: ne-resize;
+  left: 100%;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  margin-left: -5px;
+  margin-top: -6px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemSE {
+  position: absolute;
+  cursor: se-resize;
+  left: 100%;
+  top: 100%;
+  width: 9px;
+  height: 9px;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemSW {
+  position: absolute;
+  cursor: sw-resize;
+  left: 0;
+  top: 100%;
+  width: 9px;
+  height: 9px;
+  margin-left: -6px;
+  margin-top: -5px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+.dxreResBoxCornerElemNW {
+  position: absolute;
+  cursor: nw-resize;
+  left: 0;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  margin-left: -6px;
+  margin-top: -6px;
+  border-radius: 3px;
+  border: 1px solid #989898;
+  background-color: #F2FAFB;
+}
+
+/* ShapeResizeBox */
+/* TableBorderPreview */
+.dxreTablePreviewContainer {
+  width: 102px;
+  height: 94px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.dxrePreviewBorderLine {
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
+.dxrePreviewVerticalLine {
+  position: absolute;
+  height: 100%;
+  z-index: 2;
+}
+
+.dxrePreviewHorizontalLine {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+}
+
+.dxrePreviewBorderControlLine {
+  border: 0 !important;
+}
+.dxrePreviewBorderControlLine.dxrePreviewVerticalLine {
+  width: 10%;
+  z-index: 5;
+}
+.dxrePreviewBorderControlLine.dxrePreviewHorizontalLine {
+  height: 10%;
+  z-index: 5;
+}
+.dxrePreviewBorderControlLine.dxrePreviewMiddleLine {
+  top: 45%;
+}
+.dxrePreviewBorderControlLine.dxrePreviewCenterLine {
+  left: 45%;
+}
+
+.dxrePreviewMiddleLine {
+  z-index: 2;
+}
+
+.dxrePreviewBottomLine {
+  bottom: 0%;
+}
+
+.dxrePreviewCenterLine {
+  z-index: 1;
+}
+
+.dxrePreviewRightLine {
+  right: 0%;
+}
+
+.dxrePreviewTopRightCell {
+  top: 50%;
+  left: 0;
+}
+
+.dxrePreviewTopLeftCell {
+  top: 0;
+  left: 0;
+}
+
+.dxrePreviewBottomRight {
+  top: 50%;
+  left: 50%;
+}
+
+.dxrePreviewBottomLeft {
+  top: 0;
+  left: 50%;
+}
+
+.dxrePreviewCell {
+  position: absolute;
+  padding: 3px;
+}
+.dxrePreviewCell .dxrePreviewTextLine {
+  background-color: #a9a9a9;
+}
+.dxrePreviewCell .dxrePreviewTextLine:first-child {
+  margin-left: 12px;
+}
+.dxrePreviewCell .dxrePreviewTextLine:last-child {
+  margin-right: 12px;
+}
+
+.dxreBorderButton div.dxb.dxbf {
+  border: none !important;
+}
+
+/* TableBorderPreview */
+.dxreTextBoxBgZL0 {
+  z-index: 0;
+}
+
+.dxreTblRowBgZL0 {
+  z-index: 1;
+}
+
+.dxreTblCellBgZL0 {
+  z-index: 2;
+}
+
+.dxreParBgZL0 {
+  z-index: 3;
+}
+
+.dxreBoxBgZL0 {
+  z-index: 4;
+}
+
+.dxreFieldBgZL0 {
+  z-index: 5;
+}
+
+.dxreSelRangeZL0 {
+  z-index: 6;
+}
+
+.dxreBoxSpaceZL0 {
+  z-index: 7;
+}
+
+.dxreSelSearchZL0 {
+  z-index: 8;
+}
+
+.dxreSelRowZL0 {
+  z-index: 9;
+}
+
+.dxreBoxZL0 {
+  z-index: 10;
+}
+
+.dxreBookmarkZL0 {
+  z-index: 11;
+}
+
+.dxreTableBorderZL0 {
+  z-index: 12;
+}
+
+.dxreSelMisspZL0 {
+  z-index: 13;
+}
+
+.dxreSelCursorZL0 {
+  z-index: 14;
+}
+
+.dxreSelTouchBarZL0 {
+  z-index: 15;
+}
+
+.dxreTblCursorZL0 {
+  z-index: 16;
+}
+
+.dxreAnchoredPictureZL0 {
+  z-index: 17;
+}
+
+.dxreTextBoxZL0 {
+  z-index: 18;
+}
+
+.dxreTextBoxBgZL1 {
+  z-index: 19;
+}
+
+.dxreTblRowBgZL1 {
+  z-index: 20;
+}
+
+.dxreTblCellBgZL1 {
+  z-index: 21;
+}
+
+.dxreParBgZL1 {
+  z-index: 22;
+}
+
+.dxreBoxBgZL1 {
+  z-index: 23;
+}
+
+.dxreFieldBgZL1 {
+  z-index: 24;
+}
+
+.dxreSelRangeZL1 {
+  z-index: 25;
+}
+
+.dxreBoxSpaceZL1 {
+  z-index: 26;
+}
+
+.dxreSelSearchZL1 {
+  z-index: 27;
+}
+
+.dxreSelRowZL1 {
+  z-index: 28;
+}
+
+.dxreBoxZL1 {
+  z-index: 29;
+}
+
+.dxreBookmarkZL1 {
+  z-index: 30;
+}
+
+.dxreTableBorderZL1 {
+  z-index: 31;
+}
+
+.dxreSelMisspZL1 {
+  z-index: 32;
+}
+
+.dxreSelCursorZL1 {
+  z-index: 33;
+}
+
+.dxreSelTouchBarZL1 {
+  z-index: 34;
+}
+
+.dxreTblCursorZL1 {
+  z-index: 35;
+}
+
+.dxreAnchoredPictureZL1 {
+  z-index: 36;
+}
+
+.dxreTextBoxZL1 {
+  z-index: 37;
+}
+
+.dxreTextBoxBgZL2 {
+  z-index: 38;
+}
+
+.dxreTblRowBgZL2 {
+  z-index: 39;
+}
+
+.dxreTblCellBgZL2 {
+  z-index: 40;
+}
+
+.dxreParBgZL2 {
+  z-index: 41;
+}
+
+.dxreBoxBgZL2 {
+  z-index: 42;
+}
+
+.dxreFieldBgZL2 {
+  z-index: 43;
+}
+
+.dxreSelRangeZL2 {
+  z-index: 44;
+}
+
+.dxreBoxSpaceZL2 {
+  z-index: 45;
+}
+
+.dxreSelSearchZL2 {
+  z-index: 46;
+}
+
+.dxreSelRowZL2 {
+  z-index: 47;
+}
+
+.dxreBoxZL2 {
+  z-index: 48;
+}
+
+.dxreBookmarkZL2 {
+  z-index: 49;
+}
+
+.dxreTableBorderZL2 {
+  z-index: 50;
+}
+
+.dxreSelMisspZL2 {
+  z-index: 51;
+}
+
+.dxreSelCursorZL2 {
+  z-index: 52;
+}
+
+.dxreSelTouchBarZL2 {
+  z-index: 53;
+}
+
+.dxreTblCursorZL2 {
+  z-index: 54;
+}
+
+.dxreAnchoredPictureZL2 {
+  z-index: 55;
+}
+
+.dxreTextBoxZL2 {
+  z-index: 56;
+}
+
+.dxreTextBoxBgZL3 {
+  z-index: 57;
+}
+
+.dxreTblRowBgZL3 {
+  z-index: 58;
+}
+
+.dxreTblCellBgZL3 {
+  z-index: 59;
+}
+
+.dxreParBgZL3 {
+  z-index: 60;
+}
+
+.dxreBoxBgZL3 {
+  z-index: 61;
+}
+
+.dxreFieldBgZL3 {
+  z-index: 62;
+}
+
+.dxreSelRangeZL3 {
+  z-index: 63;
+}
+
+.dxreBoxSpaceZL3 {
+  z-index: 64;
+}
+
+.dxreSelSearchZL3 {
+  z-index: 65;
+}
+
+.dxreSelRowZL3 {
+  z-index: 66;
+}
+
+.dxreBoxZL3 {
+  z-index: 67;
+}
+
+.dxreBookmarkZL3 {
+  z-index: 68;
+}
+
+.dxreTableBorderZL3 {
+  z-index: 69;
+}
+
+.dxreSelMisspZL3 {
+  z-index: 70;
+}
+
+.dxreSelCursorZL3 {
+  z-index: 71;
+}
+
+.dxreSelTouchBarZL3 {
+  z-index: 72;
+}
+
+.dxreTblCursorZL3 {
+  z-index: 73;
+}
+
+.dxreAnchoredPictureZL3 {
+  z-index: 74;
+}
+
+.dxreTextBoxZL3 {
+  z-index: 75;
+}
+
+.dxreTextBoxBgZL4 {
+  z-index: 76;
+}
+
+.dxreTblRowBgZL4 {
+  z-index: 77;
+}
+
+.dxreTblCellBgZL4 {
+  z-index: 78;
+}
+
+.dxreParBgZL4 {
+  z-index: 79;
+}
+
+.dxreBoxBgZL4 {
+  z-index: 80;
+}
+
+.dxreFieldBgZL4 {
+  z-index: 81;
+}
+
+.dxreSelRangeZL4 {
+  z-index: 82;
+}
+
+.dxreBoxSpaceZL4 {
+  z-index: 83;
+}
+
+.dxreSelSearchZL4 {
+  z-index: 84;
+}
+
+.dxreSelRowZL4 {
+  z-index: 85;
+}
+
+.dxreBoxZL4 {
+  z-index: 86;
+}
+
+.dxreBookmarkZL4 {
+  z-index: 87;
+}
+
+.dxreTableBorderZL4 {
+  z-index: 88;
+}
+
+.dxreSelMisspZL4 {
+  z-index: 89;
+}
+
+.dxreSelCursorZL4 {
+  z-index: 90;
+}
+
+.dxreSelTouchBarZL4 {
+  z-index: 91;
+}
+
+.dxreTblCursorZL4 {
+  z-index: 92;
+}
+
+.dxreAnchoredPictureZL4 {
+  z-index: 93;
+}
+
+.dxreTextBoxZL4 {
+  z-index: 94;
+}
+
+.dxreTextBoxBgZL5 {
+  z-index: 95;
+}
+
+.dxreTblRowBgZL5 {
+  z-index: 96;
+}
+
+.dxreTblCellBgZL5 {
+  z-index: 97;
+}
+
+.dxreParBgZL5 {
+  z-index: 98;
+}
+
+.dxreBoxBgZL5 {
+  z-index: 99;
+}
+
+.dxreFieldBgZL5 {
+  z-index: 100;
+}
+
+.dxreSelRangeZL5 {
+  z-index: 101;
+}
+
+.dxreBoxSpaceZL5 {
+  z-index: 102;
+}
+
+.dxreSelSearchZL5 {
+  z-index: 103;
+}
+
+.dxreSelRowZL5 {
+  z-index: 104;
+}
+
+.dxreBoxZL5 {
+  z-index: 105;
+}
+
+.dxreBookmarkZL5 {
+  z-index: 106;
+}
+
+.dxreTableBorderZL5 {
+  z-index: 107;
+}
+
+.dxreSelMisspZL5 {
+  z-index: 108;
+}
+
+.dxreSelCursorZL5 {
+  z-index: 109;
+}
+
+.dxreSelTouchBarZL5 {
+  z-index: 110;
+}
+
+.dxreTblCursorZL5 {
+  z-index: 111;
+}
+
+.dxreAnchoredPictureZL5 {
+  z-index: 112;
+}
+
+.dxreTextBoxZL5 {
+  z-index: 113;
+}
+
+.dxreTextBoxBgZL6 {
+  z-index: 114;
+}
+
+.dxreTblRowBgZL6 {
+  z-index: 115;
+}
+
+.dxreTblCellBgZL6 {
+  z-index: 116;
+}
+
+.dxreParBgZL6 {
+  z-index: 117;
+}
+
+.dxreBoxBgZL6 {
+  z-index: 118;
+}
+
+.dxreFieldBgZL6 {
+  z-index: 119;
+}
+
+.dxreSelRangeZL6 {
+  z-index: 120;
+}
+
+.dxreBoxSpaceZL6 {
+  z-index: 121;
+}
+
+.dxreSelSearchZL6 {
+  z-index: 122;
+}
+
+.dxreSelRowZL6 {
+  z-index: 123;
+}
+
+.dxreBoxZL6 {
+  z-index: 124;
+}
+
+.dxreBookmarkZL6 {
+  z-index: 125;
+}
+
+.dxreTableBorderZL6 {
+  z-index: 126;
+}
+
+.dxreSelMisspZL6 {
+  z-index: 127;
+}
+
+.dxreSelCursorZL6 {
+  z-index: 128;
+}
+
+.dxreSelTouchBarZL6 {
+  z-index: 129;
+}
+
+.dxreTblCursorZL6 {
+  z-index: 130;
+}
+
+.dxreAnchoredPictureZL6 {
+  z-index: 131;
+}
+
+.dxreTextBoxZL6 {
+  z-index: 132;
+}
+
+.dxreTextBoxBgZL7 {
+  z-index: 133;
+}
+
+.dxreTblRowBgZL7 {
+  z-index: 134;
+}
+
+.dxreTblCellBgZL7 {
+  z-index: 135;
+}
+
+.dxreParBgZL7 {
+  z-index: 136;
+}
+
+.dxreBoxBgZL7 {
+  z-index: 137;
+}
+
+.dxreFieldBgZL7 {
+  z-index: 138;
+}
+
+.dxreSelRangeZL7 {
+  z-index: 139;
+}
+
+.dxreBoxSpaceZL7 {
+  z-index: 140;
+}
+
+.dxreSelSearchZL7 {
+  z-index: 141;
+}
+
+.dxreSelRowZL7 {
+  z-index: 142;
+}
+
+.dxreBoxZL7 {
+  z-index: 143;
+}
+
+.dxreBookmarkZL7 {
+  z-index: 144;
+}
+
+.dxreTableBorderZL7 {
+  z-index: 145;
+}
+
+.dxreSelMisspZL7 {
+  z-index: 146;
+}
+
+.dxreSelCursorZL7 {
+  z-index: 147;
+}
+
+.dxreSelTouchBarZL7 {
+  z-index: 148;
+}
+
+.dxreTblCursorZL7 {
+  z-index: 149;
+}
+
+.dxreAnchoredPictureZL7 {
+  z-index: 150;
+}
+
+.dxreTextBoxZL7 {
+  z-index: 151;
+}
+
+.dxreTextBoxBgZL8 {
+  z-index: 152;
+}
+
+.dxreTblRowBgZL8 {
+  z-index: 153;
+}
+
+.dxreTblCellBgZL8 {
+  z-index: 154;
+}
+
+.dxreParBgZL8 {
+  z-index: 155;
+}
+
+.dxreBoxBgZL8 {
+  z-index: 156;
+}
+
+.dxreFieldBgZL8 {
+  z-index: 157;
+}
+
+.dxreSelRangeZL8 {
+  z-index: 158;
+}
+
+.dxreBoxSpaceZL8 {
+  z-index: 159;
+}
+
+.dxreSelSearchZL8 {
+  z-index: 160;
+}
+
+.dxreSelRowZL8 {
+  z-index: 161;
+}
+
+.dxreBoxZL8 {
+  z-index: 162;
+}
+
+.dxreBookmarkZL8 {
+  z-index: 163;
+}
+
+.dxreTableBorderZL8 {
+  z-index: 164;
+}
+
+.dxreSelMisspZL8 {
+  z-index: 165;
+}
+
+.dxreSelCursorZL8 {
+  z-index: 166;
+}
+
+.dxreSelTouchBarZL8 {
+  z-index: 167;
+}
+
+.dxreTblCursorZL8 {
+  z-index: 168;
+}
+
+.dxreAnchoredPictureZL8 {
+  z-index: 169;
+}
+
+.dxreTextBoxZL8 {
+  z-index: 170;
+}
+
+.dxreDebugTableColumnBound {
+  position: absolute;
+  color: green;
+  text-align: left;
+  opacity: 1;
+  z-index: 100;
+  border: 1px solid green;
+}
+
+.dxreDebugTableRowBound {
+  position: absolute;
+  color: red;
+  border-color: red;
+  text-align: center;
+  opacity: 0.6;
+  z-index: 99;
+  border: 1px solid red;
+}
+
+.dxreDebugTableCellBound {
+  position: absolute;
+  color: blue;
+  text-align: right;
+  opacity: 0.7;
+  z-index: 98;
+  border: 1px solid blue;
+}
+
+.dxreDebugPageAreaBounds {
+  position: absolute;
+  color: red;
+  text-align: right;
+  opacity: 1;
+  z-index: 100;
+  border: 1px solid red;
+}
+
+.dxreDebugColumnBounds {
+  position: absolute;
+  color: blue;
+  text-align: center;
+  opacity: 0.7;
+  z-index: 99;
+  border: 1px solid blue;
+}
+
+.dxreDebugRowBounds {
+  position: absolute;
+  color: green;
+  text-align: left;
+  opacity: 0.6;
+  z-index: 98;
+  border: 1px solid green;
+}
+
+/* System */
+.dxreControlSys {
+  width: 1000px;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+.dxreMeasurer {
+  position: absolute;
+  top: -100000px;
+  left: -100000px;
+  overflow: hidden;
+  line-height: normal;
+}
+
+.dxreMeasurer pre {
+  position: absolute;
+  visibility: hidden;
+  /* for bootstrap */
+  white-space: pre !important;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: initial;
+  word-break: initial;
+  word-wrap: initial;
+  border-radius: 0;
+  display: initial;
+}
+
+.dxreView {
+  position: relative;
+  overflow: auto;
+  padding: 0 10px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-appearance: none;
+  -ms-touch-action: pan-x pan-y pinch-zoom;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+
+.dxreInputTargetContainer {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+}
+
+.dxreInputTarget {
+  position: fixed;
+  overflow: hidden;
+  left: -1px;
+  top: -1px;
+  height: 0;
+  width: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+.dxTouchUI .dxreInputTarget {
+  -webkit-user-select: auto;
+  user-select: all;
+  position: absolute;
+  font-size: 1px;
+  color: transparent;
+  height: 1px;
+  width: 1px;
+}
+.dxMacOSPlatform.dxSafari .dxreInputTarget {
+  -webkit-user-select: auto;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.dxTouchUI.dxAndroidMobilePlatform .dxreInputTarget {
+  font-size: inherit;
+  opacity: 0;
+}
+.dxTouchUI.dxMacOSMobilePlatform .dxreInputTarget {
+  font-size: 16px;
+  margin-top: 10px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.dxTouchUI.dxMacOSMobilePlatform .dxreInputTarget:not(.dxreiOS16) {
+  line-height: 0;
+}
+
+.dxTouchUI .dxreControlSys .dxm-popupMain,
+.dxTouchUI .dxreView,
+.dxreControlSys {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dxre-pum-suggestionItem {
+  font-weight: bold;
+}
+
+.dxreControlSys .dxm-item .dxm-content.dxalink:focus {
+  outline: none;
+}
+
+.dxreBlackout {
+  opacity: 0.4;
+}
+
+.dxreControlSys .dxr-itemDisabled .dxr-img16,
+.dxreControlSys .dxr-itemDisabled .dxr-img32 {
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+}
+
+.dxreDragCaret {
+  position: absolute;
+  width: 1px;
+  border-left: 1px dotted black;
+  z-index: 156;
+}
+
+.dxre-helperFrame {
+  top: -100px;
+  left: -100px;
+  overflow: hidden;
+  position: absolute;
+  border-style: none;
+}
+
+.dxrePlaceholderDiv {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.dxrePopupTarget {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* System */
+.dxreRuler .dxre-leftIndentDragHandleBody {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #929292;
+  border-top: none;
+  height: 6px;
+}
+
+.dxRichEdit_CenterTabDragHandle, .dxRichEdit_ColumnSeparatorDragHandle, .dxRichEdit_DecimalTabDragHandle, .dxRichEdit_FirstLineIndentDragHandle, .dxRichEdit_LeftIndentDragHandle, .dxRichEdit_LeftTabDragHandle, .dxRichEdit_QuickSearchCloseButton, .dxRichEdit_QuickSearchCollapseButton, .dxRichEdit_QuickSearchNextButton, .dxRichEdit_QuickSearchPrevButton, .dxRichEdit_RightIndentDragHandle, .dxRichEdit_RightTabDragHandle {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAxCAMAAACBMCu/AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAmVBMVEUAAACYmJiZmZmBgYF/f39/f3+BgYHx8fH29vb///+ZmZlra2tMTEzv7+9eXl5LS0tVVVWSkpJ3d3c+Pj60tLRHR0dmZmZERERsbGxWVlZgYGBOTk5UVFRiYmLk5OT7+/u5ubnw8PDx8fDy8vL4+Pj6+vr49fb09PTw8fH+/v79/f1dXV1jY2NISEhXV1dYWFhlZWVDQ0NhYWG2UeyWAAAABXRSTlMAgX6gOE/klsIAAAFXSURBVHhezZLnboNAEAYX8B29uPeS3uv7P1zgvmwWWCuRpUjJ+MfuDeOzkEy/yyCwLYKBFo7gkMdf5IdAC4fN71rkVgtk9x2sFsj2DcbsgYUQxdmVwxhMqwWyS2CMG3XGR8BZ9Ikx0XUU1RkOjYJAdgOMcaPO+Ag4u3AYg2mVkAxSMlGShWF4GzLnVgtku7MWO6uFI5hAQ04CJU74h/wbEh/TT/qBl9TIwUflke6QSacrHx21O11Rgq5zuVSSoSPBh+plLKXyPN0l3EmF99D0q587VHipv2fU24ZMLdwHVewW2YYxGNIIoIrR8SYZbuMKnWz6NlGyyRf4tqOZ/Pz3t8nLyG2MbHiOCtAJpGlnSRfyZNbNECBbvRMzK45l28dGLJ+JKTYkFA8EqqoZ5ZqYquQtayjLjKaOpynNp+uX7YLS16LK3jgbf9Ja5tlyldKs2GTzMZ3EB3cxPZhYmxYHAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.dxRichEdit_CenterTabDragHandle {
+  background-position: -9px -42px;
+  width: 8px;
+  height: 6px;
+}
+
+.dxRichEdit_ColumnSeparatorDragHandle {
+  background-position: -30px -33px;
+  width: 7px;
+  height: 8px;
+}
+
+.dxRichEdit_DecimalTabDragHandle {
+  background-position: 0px -42px;
+  width: 8px;
+  height: 6px;
+}
+
+.dxRichEdit_FirstLineIndentDragHandle {
+  background-position: -20px -33px;
+  width: 9px;
+  height: 8px;
+}
+
+.dxRichEdit_LeftIndentDragHandle {
+  background-position: -10px -33px;
+  width: 9px;
+  height: 8px;
+}
+
+.dxRichEdit_LeftTabDragHandle {
+  background-position: -18px -42px;
+  width: 6px;
+  height: 6px;
+}
+
+.dxRichEdit_QuickSearchCloseButton {
+  background-position: -16px -18px;
+  width: 15px;
+  height: 14px;
+}
+
+.dxRichEdit_QuickSearchCollapseButton {
+  background-position: 0px -18px;
+  width: 15px;
+  height: 14px;
+}
+
+.dxRichEdit_QuickSearchNextButton {
+  background-position: 0px 0px;
+  width: 16px;
+  height: 17px;
+}
+
+.dxRichEdit_QuickSearchPrevButton {
+  background-position: -17px 0px;
+  width: 16px;
+  height: 17px;
+}
+
+.dxRichEdit_RightIndentDragHandle {
+  background-position: 0px -33px;
+  width: 9px;
+  height: 8px;
+}
+
+.dxRichEdit_RightTabDragHandle {
+  background-position: -25px -42px;
+  width: 6px;
+  height: 6px;
+}
+
+.dx-ribbon .dx-toolbar .dx-toolbar-items-container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: content-box;
+}
+
+.dx-ribbon .dx-tab-text {
+  font-weight: 500;
+}
+
+.dx-ribbon .dx-texteditor.dx-editor-filled,
+.dx-toolbar-menu-section .dx-texteditor.dx-editor-filled {
+  background-color: transparent;
+}
+
+.dx-ribbon .dx-toolbar .dx-toolbar-items-container .dx-numberbox {
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.dx-ribbon .dx-tabs {
+  border-width: 0;
+}
+.dx-ribbon .dx-multiview-wrapper {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.dx-ribbon.dx-tabpanel[class*="generic."] > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-wrapper, .dx-ribbon.dx-tabpanel[class*="generic."] > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-scrollable > .dx-scrollable-wrapper > .dx-scrollable-container > .dx-scrollable-content > .dx-tabs-wrapper {
+  border-block-start: none;
+  -webkit-border-before: none;
+}
+.dx-ribbon.dx-tabpanel[class*="generic."] > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-wrapper::after, .dx-ribbon.dx-tabpanel[class*="generic."] > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-scrollable > .dx-scrollable-wrapper > .dx-scrollable-container > .dx-scrollable-content > .dx-tabs-wrapper::after {
+  border-inline-start: none;
+  -webkit-border-start: none;
+  border-inline-end: none;
+  -webkit-border-end: none;
+}
+.dx-ribbon.dx-tabpanel[class*="generic."] > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-nav-button {
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+}
+
+.dx-ribbon .dx-toolbar .dx-toolbar-item {
+  padding: 0;
+}
+
+.dx-ribbon .dx-toolbar-item .dx-button {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.dx-ribbon .dx-toolbar-item .dx-selectbox {
+  margin: 0 6px;
+}
+
+.dx-ribbon .dx-toolbar-before {
+  padding-left: 8px;
+}
+
+.dx-ribbon .dx-r-separator,
+.dx-toolbar-menu-section .dx-r-separator {
+  border-style: solid;
+  border-width: 0;
+}
+
+.dx-ribbon .dx-r-separator-container {
+  height: 2.6em;
+}
+
+.dx-ribbon .dx-r-separator {
+  margin: 0 7px 0 8px;
+  border-right-width: 1px;
+  height: 100%;
+}
+
+.dx-toolbar-menu-section .dx-r-separator {
+  margin: 0 -16px 0 -16px;
+  border-bottom-width: 1px;
+  height: 0;
+}
+
+.dx-ribbon-item.dx-colorbox .dx-colorbox-color-result-preview {
+  cursor: pointer;
+}
+
+.dx-toolbar-menu-section .dx-ribbon-item.dx-numberbox,
+.dx-toolbar-menu-section .dx-ribbon-item.dx-colorbox,
+.dx-toolbar-menu-section .dx-ribbon-item.dx-selectbox,
+.dx-toolbar-menu-section .dx-ribbon-item .dx-menu-items-container,
+.dx-toolbar-menu-section .dx-ribbon-item .dx-menu-items-container .dx-menu-item-wrapper {
+  width: 100% !important;
+}
+
+.dx-ribbon .dx-menu .dx-menu-item .dx-menu-item-content {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.dx-ribbon[class*=material] .dx-menu-base.dx-ribbon-item :not(.dx-submenu) .dx-menu-item .dx-menu-item-content .dx-menu-item-text {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.dx-ribbon[class*=material] .dx-dropdowneditor.dx-editor-filled::after {
+  border-bottom-color: transparent;
+}
+.dx-ribbon[class*=material] .dx-menu-item-content {
+  display: flex;
+  align-items: center;
+}
+.dx-ribbon[class*=material][class*=compact] .dx-menu-base .dx-icon {
+  font-size: 16px;
+}
+.dx-ribbon[class*=material]:not([class*=compact]) .dx-menu-base .dx-icon {
+  font-size: 18px;
+}
+
+.dx-ribbon .dx-menu-base.dx-ribbon-item.dx-showTextInMenu :not(.dx-submenu) .dx-menu-item .dx-menu-item-content .dx-menu-item-text, .dx-ribbon .dx-menu-base.dx-ribbon-item.dx-showTextInMenu :not(.dx-submenu) .dx-menu-item .dx-menu-item-content .dx-menu-item-popout:before {
+  display: none;
+}
+
+.dx-toolbar-menu-section .dx-menu-base.dx-ribbon-item.dx-showTextInMenu :not(.dx-submenu) .dx-menu-item .dx-menu-item-content .dx-menu-item-text {
+  display: inline;
+}
+
+.dx-menu.dx-ribbon-item .dx-menu-item.dx-menu-item-has-text.dx-menu-item-has-icon .dx-icon {
+  margin-right: 12px;
+}
+
+.dx-ribbon .dx-menu.dx-ribbon-item.dx-showTextInMenu .dx-menu-item.dx-menu-item-has-text.dx-menu-item-has-icon .dx-icon {
+  margin-right: 0;
+}
+
+.dx-ribbon .dx-toolbar-menu-container .dx-dropdownmenu-button {
+  margin-right: 10px;
+  border-width: 0;
+}
+
+.dx-ribbon input.dx-colorbox-input {
+  color: transparent;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "dxre-icons";
+  src: url("./icons/dxre-icons.woff2") format("woff2"), url("./icons/dxre-icons.woff") format("woff"), url("./icons/dxre-icons.ttf") format("truetype");
+}
+.dxre-icon-ZoomOut:before, .dxre-icon-ZoomIn:before, .dxre-icon-SimpleView:before, .dxre-icon-RulerVertical:before, .dxre-icon-RulerHorizontal:before, .dxre-icon-PrintLayoutView:before, .dxre-icon-FullScreen:before, .dxre-icon-DraftView:before, .dxre-icon-ViewTableGridlines:before, .dxre-icon-TableProperties:before, .dxre-icon-TableFixedColumnWidth:before, .dxre-icon-TableCellMargins:before, .dxre-icon-TableAutoFitWindow:before, .dxre-icon-TableAutoFitContents:before, .dxre-icon-SplitTableCells:before, .dxre-icon-SplitTable:before, .dxre-icon-SelectTableRow:before, .dxre-icon-SelectTableColumn:before, .dxre-icon-SelectTableCell:before, .dxre-icon-SelectTable:before, .dxre-icon-Select:before, .dxre-icon-PenColor:before, .dxre-icon-MergeTableCells:before, .dxre-icon-InsertTableRowsBelow:before, .dxre-icon-InsertTableRowsAbove:before, .dxre-icon-InsertTableColumnsToTheRight:before, .dxre-icon-InsertTableColumnsToTheLeft:before, .dxre-icon-InsertTableCells:before, .dxre-icon-DeleteTableRows:before, .dxre-icon-DeleteTableColumns:before, .dxre-icon-DeleteTableCells:before, .dxre-icon-DeleteTable:before, .dxre-icon-BorderTop:before, .dxre-icon-BordersInside:before, .dxre-icon-BordersAll:before, .dxre-icon-BorderRight:before, .dxre-icon-BorderOutside:before, .dxre-icon-BorderNone:before, .dxre-icon-BorderLeft:before, .dxre-icon-BorderInsideVertical:before, .dxre-icon-BorderInsideHorizontal:before, .dxre-icon-BorderBottom:before, .dxre-icon-AlignTopRight:before, .dxre-icon-AlignTopLeft:before, .dxre-icon-AlignTopCenter:before, .dxre-icon-AlignMiddleRight:before, .dxre-icon-AlignMiddleLeft:before, .dxre-icon-AlignMiddleCenter:before, .dxre-icon-AlignBottomRight:before, .dxre-icon-AlignBottomLeft:before, .dxre-icon-AlignBottomCenter:before, .dxre-icon-UnprotectDocument:before, .dxre-icon-SpellCheckAsYouType:before, .dxre-icon-SpellCheck:before, .dxre-icon-ShowComments:before, .dxre-icon-ReviewingPane:before, .dxre-icon-Reviewers:before, .dxre-icon-ProtectDocument:before, .dxre-icon-PreviousComment:before, .dxre-icon-NextComment:before, .dxre-icon-NewComment:before, .dxre-icon-Language:before, .dxre-icon-EditRangePermission:before, .dxre-icon-DeleteComment:before, .dxre-icon-UpdateTableOfContents:before, .dxre-icon-InsertTableOfEquations:before, .dxre-icon-InsertTableOfContents:before, .dxre-icon-InsertTableOfCaptions:before, .dxre-icon-InsertTableCaption:before, .dxre-icon-InsertFigureCaption:before, .dxre-icon-InsertCaption:before, .dxre-icon-AddParagraphToTableOfContents:before, .dxre-icon-TextWrapTopAndBottom:before, .dxre-icon-TextWrapTight:before, .dxre-icon-TextWrapThrough:before, .dxre-icon-TextWrapSquare:before, .dxre-icon-TextWrapInline:before, .dxre-icon-TextWrapInFrontOfText:before, .dxre-icon-TextWrapBehind:before, .dxre-icon-FloatingObjectSendToBack:before, .dxre-icon-FloatingObjectSendBehindText:before, .dxre-icon-FloatingObjectSendBackward:before, .dxre-icon-FloatingObjectOutlineColor:before, .dxre-icon-FloatingObjectFillColor:before, .dxre-icon-FloatingObjectBringToFront:before, .dxre-icon-FloatingObjectBringInFrontOfText:before, .dxre-icon-FloatingObjectBringForward:before, .dxre-icon-AlignFloatingObjectTopRight:before, .dxre-icon-AlignFloatingObjectTopLeft:before, .dxre-icon-AlignFloatingObjectTopCenter:before, .dxre-icon-AlignFloatingObjectMiddleRight:before, .dxre-icon-AlignFloatingObjectMiddleLeft:before, .dxre-icon-AlignFloatingObjectMiddleCenter:before, .dxre-icon-AlignFloatingObjectBottomRight:before, .dxre-icon-AlignFloatingObjectBottomLeft:before, .dxre-icon-AlignFloatingObjectBottomCenter:before, .dxre-icon-PaperSize:before, .dxre-icon-PageOrientationPortrait:before, .dxre-icon-PageOrientationLandscape:before, .dxre-icon-PageOrientation:before, .dxre-icon-PageMarginsWide:before, .dxre-icon-PageMarginsNormal:before, .dxre-icon-PageMarginsNarrow:before, .dxre-icon-PageMarginsModerate:before, .dxre-icon-PageMargins:before, .dxre-icon-PageColor:before, .dxre-icon-LineNumbering:before, .dxre-icon-InsertSectionBreakOddPage:before, .dxre-icon-InsertSectionBreakNextPage:before, .dxre-icon-InsertSectionBreakEvenPage:before, .dxre-icon-InsertColumnBreak:before, .dxre-icon-ColumnsTwo:before, .dxre-icon-ColumnsThree:before, .dxre-icon-ColumnsOne:before, .dxre-icon-Columns:before, .dxre-icon-ViewMergedData:before, .dxre-icon-ShowAllFieldResults:before, .dxre-icon-ShowAllFieldCodes:before, .dxre-icon-Prev:before, .dxre-icon-Next:before, .dxre-icon-MailMerge:before, .dxre-icon-Last:before, .dxre-icon-InsertDataField:before, .dxre-icon-First:before, .dxre-icon-CustomizeMergeField:before, .dxre-icon-InsertSectionBreakContinuous:before, .dxre-icon-Symbol:before, .dxre-icon-PageBreak:before, .dxre-icon-InsertTextBox:before, .dxre-icon-InsertTable:before, .dxre-icon-InsertPageNumber:before, .dxre-icon-InsertPageCount:before, .dxre-icon-InsertPageBreak:before, .dxre-icon-InsertImage:before, .dxre-icon-InsertFloatingObjectImage:before, .dxre-icon-Header:before, .dxre-icon-Footer:before, .dxre-icon-Bookmark:before, .dxre-icon-Hyperlink:before, .dxre-icon-UnderlineDouble:before, .dxre-icon-Underline:before, .dxre-icon-Superscript:before, .dxre-icon-Subscript:before, .dxre-icon-StrikeoutDouble:before, .dxre-icon-Strikeout:before, .dxre-icon-ShowHidden:before, .dxre-icon-Shading:before, .dxre-icon-Replace:before, .dxre-icon-PasteSpecial:before, .dxre-icon-Paste:before, .dxre-icon-ListNumbers:before, .dxre-icon-ListMultilevel:before, .dxre-icon-ListBullets:before, .dxre-icon-LineSpacing:before, .dxre-icon-Italic:before, .dxre-icon-IndentIncrease:before, .dxre-icon-IndentDecrease:before, .dxre-icon-Highlight:before, .dxre-icon-FontSizeIncrease:before, .dxre-icon-FontSizeDecrease:before, .dxre-icon-FontSize:before, .dxre-icon-FontColor:before, .dxre-icon-Find:before, .dxre-icon-Cut:before, .dxre-icon-Copy:before, .dxre-icon-ClearFormatting:before, .dxre-icon-ChangeTextCase:before, .dxre-icon-ChangeFontStyle:before, .dxre-icon-Bold:before, .dxre-icon-AlignRight:before, .dxre-icon-AlignLeft:before, .dxre-icon-AlignJustify:before, .dxre-icon-AlignCenter:before, .dxre-icon-ShowPrevious:before, .dxre-icon-ShowNext:before, .dxre-icon-LinkToPrevious:before, .dxre-icon-GoToHeader:before, .dxre-icon-GoToFooter:before, .dxre-icon-DifferentOddAndEvenPages:before, .dxre-icon-DifferentFirstPage:before, .dxre-icon-ClearHeaderAndFooter:before, .dxre-icon-FloatingObjectTextWrapType:before, .dxre-icon-FloatingObjectAlignment:before, .dxre-icon-Undo:before, .dxre-icon-SaveAs:before, .dxre-icon-Save:before, .dxre-icon-Redo:before, .dxre-icon-PrintDialog:before, .dxre-icon-Print:before, .dxre-icon-Preview:before, .dxre-icon-Open:before, .dxre-icon-New:before, .dxre-icon-DocumentStatistics:before, .dxre-icon-DocumentProperties:before, .dxre-icon-Download:before, .dxre-icon-DeleteHyperlink:before, .dxre-icon-UpdateField:before, .dxre-icon-ToggleFieldCodes:before, .dxre-icon-SelectAll:before, .dxre-icon-RestartNumbering:before, .dxre-icon-Paragraph:before, .dxre-icon-Font:before, .dxre-icon-FloatingObjectLayoutOptions:before, .dxre-icon-ContinueNumbering:before {
+  font-family: "dxre-icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.dxre-icon-ContinueNumbering:before {
+  content: "\e001";
+}
+
+.dxre-icon-FloatingObjectLayoutOptions:before {
+  content: "\e002";
+}
+
+.dxre-icon-Font:before {
+  content: "\e003";
+}
+
+.dxre-icon-Paragraph:before {
+  content: "\e004";
+}
+
+.dxre-icon-RestartNumbering:before {
+  content: "\e005";
+}
+
+.dxre-icon-SelectAll:before {
+  content: "\e006";
+}
+
+.dxre-icon-ToggleFieldCodes:before {
+  content: "\e007";
+}
+
+.dxre-icon-UpdateField:before {
+  content: "\e008";
+}
+
+.dxre-icon-DeleteHyperlink:before {
+  content: "\e009";
+}
+
+.dxre-icon-Download:before {
+  content: "\e00a";
+}
+
+.dxre-icon-DocumentProperties:before {
+  content: "\e00b";
+}
+
+.dxre-icon-DocumentStatistics:before {
+  content: "\e00c";
+}
+
+.dxre-icon-New:before {
+  content: "\e00d";
+}
+
+.dxre-icon-Open:before {
+  content: "\e00e";
+}
+
+.dxre-icon-Preview:before {
+  content: "\e00f";
+}
+
+.dxre-icon-Print:before {
+  content: "\e010";
+}
+
+.dxre-icon-PrintDialog:before {
+  content: "\e011";
+}
+
+.dxre-icon-Redo:before {
+  content: "\e012";
+}
+
+.dxre-icon-Save:before {
+  content: "\e013";
+}
+
+.dxre-icon-SaveAs:before {
+  content: "\e014";
+}
+
+.dxre-icon-Undo:before {
+  content: "\e015";
+}
+
+.dxre-icon-FloatingObjectAlignment:before {
+  content: "\e016";
+}
+
+.dxre-icon-FloatingObjectTextWrapType:before {
+  content: "\e017";
+}
+
+.dxre-icon-ClearHeaderAndFooter:before {
+  content: "\e018";
+}
+
+.dxre-icon-DifferentFirstPage:before {
+  content: "\e019";
+}
+
+.dxre-icon-DifferentOddAndEvenPages:before {
+  content: "\e01a";
+}
+
+.dxre-icon-GoToFooter:before {
+  content: "\e01b";
+}
+
+.dxre-icon-GoToHeader:before {
+  content: "\e01c";
+}
+
+.dxre-icon-LinkToPrevious:before {
+  content: "\e01d";
+}
+
+.dxre-icon-ShowNext:before {
+  content: "\e01e";
+}
+
+.dxre-icon-ShowPrevious:before {
+  content: "\e01f";
+}
+
+.dxre-icon-AlignCenter:before {
+  content: "\e020";
+}
+
+.dxre-icon-AlignJustify:before {
+  content: "\e021";
+}
+
+.dxre-icon-AlignLeft:before {
+  content: "\e022";
+}
+
+.dxre-icon-AlignRight:before {
+  content: "\e023";
+}
+
+.dxre-icon-Bold:before {
+  content: "\e024";
+}
+
+.dxre-icon-ChangeFontStyle:before {
+  content: "\e025";
+}
+
+.dxre-icon-ChangeTextCase:before {
+  content: "\e026";
+}
+
+.dxre-icon-ClearFormatting:before {
+  content: "\e027";
+}
+
+.dxre-icon-Copy:before {
+  content: "\e028";
+}
+
+.dxre-icon-Cut:before {
+  content: "\e029";
+}
+
+.dxre-icon-Find:before {
+  content: "\e02a";
+}
+
+.dxre-icon-FontColor:before {
+  content: "\e02b";
+}
+
+.dxre-icon-FontSize:before {
+  content: "\e02c";
+}
+
+.dxre-icon-FontSizeDecrease:before {
+  content: "\e02d";
+}
+
+.dxre-icon-FontSizeIncrease:before {
+  content: "\e02e";
+}
+
+.dxre-icon-Highlight:before {
+  content: "\e02f";
+}
+
+.dxre-icon-IndentDecrease:before {
+  content: "\e030";
+}
+
+.dxre-icon-IndentIncrease:before {
+  content: "\e031";
+}
+
+.dxre-icon-Italic:before {
+  content: "\e032";
+}
+
+.dxre-icon-LineSpacing:before {
+  content: "\e033";
+}
+
+.dxre-icon-ListBullets:before {
+  content: "\e034";
+}
+
+.dxre-icon-ListMultilevel:before {
+  content: "\e035";
+}
+
+.dxre-icon-ListNumbers:before {
+  content: "\e036";
+}
+
+.dxre-icon-Paste:before {
+  content: "\e037";
+}
+
+.dxre-icon-PasteSpecial:before {
+  content: "\e038";
+}
+
+.dxre-icon-Replace:before {
+  content: "\e039";
+}
+
+.dxre-icon-Shading:before {
+  content: "\e03a";
+}
+
+.dxre-icon-ShowHidden:before {
+  content: "\e03b";
+}
+
+.dxre-icon-Strikeout:before {
+  content: "\e03c";
+}
+
+.dxre-icon-StrikeoutDouble:before {
+  content: "\e03d";
+}
+
+.dxre-icon-Subscript:before {
+  content: "\e03e";
+}
+
+.dxre-icon-Superscript:before {
+  content: "\e03f";
+}
+
+.dxre-icon-Underline:before {
+  content: "\e040";
+}
+
+.dxre-icon-UnderlineDouble:before {
+  content: "\e041";
+}
+
+.dxre-icon-Hyperlink:before {
+  content: "\e042";
+}
+
+.dxre-icon-Bookmark:before {
+  content: "\e043";
+}
+
+.dxre-icon-Footer:before {
+  content: "\e044";
+}
+
+.dxre-icon-Header:before {
+  content: "\e045";
+}
+
+.dxre-icon-InsertFloatingObjectImage:before {
+  content: "\e046";
+}
+
+.dxre-icon-InsertImage:before {
+  content: "\e047";
+}
+
+.dxre-icon-InsertPageBreak:before {
+  content: "\e048";
+}
+
+.dxre-icon-InsertPageCount:before {
+  content: "\e049";
+}
+
+.dxre-icon-InsertPageNumber:before {
+  content: "\e04a";
+}
+
+.dxre-icon-InsertTable:before {
+  content: "\e04b";
+}
+
+.dxre-icon-InsertTextBox:before {
+  content: "\e04c";
+}
+
+.dxre-icon-PageBreak:before {
+  content: "\e04d";
+}
+
+.dxre-icon-Symbol:before {
+  content: "\e04e";
+}
+
+.dxre-icon-InsertSectionBreakContinuous:before {
+  content: "\e04f";
+}
+
+.dxre-icon-CustomizeMergeField:before {
+  content: "\e050";
+}
+
+.dxre-icon-First:before {
+  content: "\e051";
+}
+
+.dxre-icon-InsertDataField:before {
+  content: "\e052";
+}
+
+.dxre-icon-Last:before {
+  content: "\e053";
+}
+
+.dxre-icon-MailMerge:before {
+  content: "\e054";
+}
+
+.dxre-icon-Next:before {
+  content: "\e055";
+}
+
+.dxre-icon-Prev:before {
+  content: "\e056";
+}
+
+.dxre-icon-ShowAllFieldCodes:before {
+  content: "\e057";
+}
+
+.dxre-icon-ShowAllFieldResults:before {
+  content: "\e058";
+}
+
+.dxre-icon-ViewMergedData:before {
+  content: "\e059";
+}
+
+.dxre-icon-Columns:before {
+  content: "\e05a";
+}
+
+.dxre-icon-ColumnsOne:before {
+  content: "\e05b";
+}
+
+.dxre-icon-ColumnsThree:before {
+  content: "\e05c";
+}
+
+.dxre-icon-ColumnsTwo:before {
+  content: "\e05d";
+}
+
+.dxre-icon-InsertColumnBreak:before {
+  content: "\e05e";
+}
+
+.dxre-icon-InsertSectionBreakEvenPage:before {
+  content: "\e05f";
+}
+
+.dxre-icon-InsertSectionBreakNextPage:before {
+  content: "\e060";
+}
+
+.dxre-icon-InsertSectionBreakOddPage:before {
+  content: "\e061";
+}
+
+.dxre-icon-LineNumbering:before {
+  content: "\e062";
+}
+
+.dxre-icon-PageColor:before {
+  content: "\e063";
+}
+
+.dxre-icon-PageMargins:before {
+  content: "\e064";
+}
+
+.dxre-icon-PageMarginsModerate:before {
+  content: "\e065";
+}
+
+.dxre-icon-PageMarginsNarrow:before {
+  content: "\e066";
+}
+
+.dxre-icon-PageMarginsNormal:before {
+  content: "\e067";
+}
+
+.dxre-icon-PageMarginsWide:before {
+  content: "\e068";
+}
+
+.dxre-icon-PageOrientation:before {
+  content: "\e069";
+}
+
+.dxre-icon-PageOrientationLandscape:before {
+  content: "\e06a";
+}
+
+.dxre-icon-PageOrientationPortrait:before {
+  content: "\e06b";
+}
+
+.dxre-icon-PaperSize:before {
+  content: "\e06c";
+}
+
+.dxre-icon-AlignFloatingObjectBottomCenter:before {
+  content: "\e06d";
+}
+
+.dxre-icon-AlignFloatingObjectBottomLeft:before {
+  content: "\e06e";
+}
+
+.dxre-icon-AlignFloatingObjectBottomRight:before {
+  content: "\e06f";
+}
+
+.dxre-icon-AlignFloatingObjectMiddleCenter:before {
+  content: "\e070";
+}
+
+.dxre-icon-AlignFloatingObjectMiddleLeft:before {
+  content: "\e071";
+}
+
+.dxre-icon-AlignFloatingObjectMiddleRight:before {
+  content: "\e072";
+}
+
+.dxre-icon-AlignFloatingObjectTopCenter:before {
+  content: "\e073";
+}
+
+.dxre-icon-AlignFloatingObjectTopLeft:before {
+  content: "\e074";
+}
+
+.dxre-icon-AlignFloatingObjectTopRight:before {
+  content: "\e075";
+}
+
+.dxre-icon-FloatingObjectBringForward:before {
+  content: "\e076";
+}
+
+.dxre-icon-FloatingObjectBringInFrontOfText:before {
+  content: "\e077";
+}
+
+.dxre-icon-FloatingObjectBringToFront:before {
+  content: "\e078";
+}
+
+.dxre-icon-FloatingObjectFillColor:before {
+  content: "\e079";
+}
+
+.dxre-icon-FloatingObjectOutlineColor:before {
+  content: "\e07a";
+}
+
+.dxre-icon-FloatingObjectSendBackward:before {
+  content: "\e07b";
+}
+
+.dxre-icon-FloatingObjectSendBehindText:before {
+  content: "\e07c";
+}
+
+.dxre-icon-FloatingObjectSendToBack:before {
+  content: "\e07d";
+}
+
+.dxre-icon-TextWrapBehind:before {
+  content: "\e07e";
+}
+
+.dxre-icon-TextWrapInFrontOfText:before {
+  content: "\e07f";
+}
+
+.dxre-icon-TextWrapInline:before {
+  content: "\e080";
+}
+
+.dxre-icon-TextWrapSquare:before {
+  content: "\e081";
+}
+
+.dxre-icon-TextWrapThrough:before {
+  content: "\e082";
+}
+
+.dxre-icon-TextWrapTight:before {
+  content: "\e083";
+}
+
+.dxre-icon-TextWrapTopAndBottom:before {
+  content: "\e084";
+}
+
+.dxre-icon-AddParagraphToTableOfContents:before {
+  content: "\e085";
+}
+
+.dxre-icon-InsertCaption:before {
+  content: "\e086";
+}
+
+.dxre-icon-InsertFigureCaption:before {
+  content: "\e087";
+}
+
+.dxre-icon-InsertTableCaption:before {
+  content: "\e088";
+}
+
+.dxre-icon-InsertTableOfCaptions:before {
+  content: "\e089";
+}
+
+.dxre-icon-InsertTableOfContents:before {
+  content: "\e08a";
+}
+
+.dxre-icon-InsertTableOfEquations:before {
+  content: "\e08b";
+}
+
+.dxre-icon-UpdateTableOfContents:before {
+  content: "\e08c";
+}
+
+.dxre-icon-DeleteComment:before {
+  content: "\e08d";
+}
+
+.dxre-icon-EditRangePermission:before {
+  content: "\e08e";
+}
+
+.dxre-icon-Language:before {
+  content: "\e08f";
+}
+
+.dxre-icon-NewComment:before {
+  content: "\e090";
+}
+
+.dxre-icon-NextComment:before {
+  content: "\e091";
+}
+
+.dxre-icon-PreviousComment:before {
+  content: "\e092";
+}
+
+.dxre-icon-ProtectDocument:before {
+  content: "\e093";
+}
+
+.dxre-icon-Reviewers:before {
+  content: "\e094";
+}
+
+.dxre-icon-ReviewingPane:before {
+  content: "\e095";
+}
+
+.dxre-icon-ShowComments:before {
+  content: "\e096";
+}
+
+.dxre-icon-SpellCheck:before {
+  content: "\e097";
+}
+
+.dxre-icon-SpellCheckAsYouType:before {
+  content: "\e098";
+}
+
+.dxre-icon-UnprotectDocument:before {
+  content: "\e099";
+}
+
+.dxre-icon-AlignBottomCenter:before {
+  content: "\e09a";
+}
+
+.dxre-icon-AlignBottomLeft:before {
+  content: "\e09b";
+}
+
+.dxre-icon-AlignBottomRight:before {
+  content: "\e09c";
+}
+
+.dxre-icon-AlignMiddleCenter:before {
+  content: "\e09d";
+}
+
+.dxre-icon-AlignMiddleLeft:before {
+  content: "\e09e";
+}
+
+.dxre-icon-AlignMiddleRight:before {
+  content: "\e09f";
+}
+
+.dxre-icon-AlignTopCenter:before {
+  content: "\e0a0";
+}
+
+.dxre-icon-AlignTopLeft:before {
+  content: "\e0a1";
+}
+
+.dxre-icon-AlignTopRight:before {
+  content: "\e0a2";
+}
+
+.dxre-icon-BorderBottom:before {
+  content: "\e0a3";
+}
+
+.dxre-icon-BorderInsideHorizontal:before {
+  content: "\e0a4";
+}
+
+.dxre-icon-BorderInsideVertical:before {
+  content: "\e0a5";
+}
+
+.dxre-icon-BorderLeft:before {
+  content: "\e0a6";
+}
+
+.dxre-icon-BorderNone:before {
+  content: "\e0a7";
+}
+
+.dxre-icon-BorderOutside:before {
+  content: "\e0a8";
+}
+
+.dxre-icon-BorderRight:before {
+  content: "\e0a9";
+}
+
+.dxre-icon-BordersAll:before {
+  content: "\e0aa";
+}
+
+.dxre-icon-BordersInside:before {
+  content: "\e0ab";
+}
+
+.dxre-icon-BorderTop:before {
+  content: "\e0ac";
+}
+
+.dxre-icon-DeleteTable:before {
+  content: "\e0ad";
+}
+
+.dxre-icon-DeleteTableCells:before {
+  content: "\e0ae";
+}
+
+.dxre-icon-DeleteTableColumns:before {
+  content: "\e0af";
+}
+
+.dxre-icon-DeleteTableRows:before {
+  content: "\e0b0";
+}
+
+.dxre-icon-InsertTableCells:before {
+  content: "\e0b1";
+}
+
+.dxre-icon-InsertTableColumnsToTheLeft:before {
+  content: "\e0b2";
+}
+
+.dxre-icon-InsertTableColumnsToTheRight:before {
+  content: "\e0b3";
+}
+
+.dxre-icon-InsertTableRowsAbove:before {
+  content: "\e0b4";
+}
+
+.dxre-icon-InsertTableRowsBelow:before {
+  content: "\e0b5";
+}
+
+.dxre-icon-MergeTableCells:before {
+  content: "\e0b6";
+}
+
+.dxre-icon-PenColor:before {
+  content: "\e0b7";
+}
+
+.dxre-icon-Select:before {
+  content: "\e0b8";
+}
+
+.dxre-icon-SelectTable:before {
+  content: "\e0b9";
+}
+
+.dxre-icon-SelectTableCell:before {
+  content: "\e0ba";
+}
+
+.dxre-icon-SelectTableColumn:before {
+  content: "\e0bb";
+}
+
+.dxre-icon-SelectTableRow:before {
+  content: "\e0bc";
+}
+
+.dxre-icon-SplitTable:before {
+  content: "\e0bd";
+}
+
+.dxre-icon-SplitTableCells:before {
+  content: "\e0be";
+}
+
+.dxre-icon-TableAutoFitContents:before {
+  content: "\e0bf";
+}
+
+.dxre-icon-TableAutoFitWindow:before {
+  content: "\e0c0";
+}
+
+.dxre-icon-TableCellMargins:before {
+  content: "\e0c1";
+}
+
+.dxre-icon-TableFixedColumnWidth:before {
+  content: "\e0c2";
+}
+
+.dxre-icon-TableProperties:before {
+  content: "\e0c3";
+}
+
+.dxre-icon-ViewTableGridlines:before {
+  content: "\e0c4";
+}
+
+.dxre-icon-DraftView:before {
+  content: "\e0c5";
+}
+
+.dxre-icon-FullScreen:before {
+  content: "\e0c6";
+}
+
+.dxre-icon-PrintLayoutView:before {
+  content: "\e0c7";
+}
+
+.dxre-icon-RulerHorizontal:before {
+  content: "\e0c8";
+}
+
+.dxre-icon-RulerVertical:before {
+  content: "\e0c9";
+}
+
+.dxre-icon-SimpleView:before {
+  content: "\e0ca";
+}
+
+.dxre-icon-ZoomIn:before {
+  content: "\e0cb";
+}
+
+.dxre-icon-ZoomOut:before {
+  content: "\e0cc";
+}

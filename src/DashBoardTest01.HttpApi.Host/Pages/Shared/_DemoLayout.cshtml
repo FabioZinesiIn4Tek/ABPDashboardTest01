@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="demo-header">
+    <div class="demo-title">
+        <span>DevExpress Dashboard</span><span id="working-mode-title"></span>
+    </div>
+    <div class="demo-toolbar demo-toolbar-button">
+        <div id="designer-mode-button" class="demo-header-item">
+            <button class="dashboard-demobutton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <style type="text/css">
+                        .editDashboardIcon {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path class="editDashboardIcon" d="M5 19h1.4l8.625-8.625-1.4-1.4L5 17.6V19ZM19.3 8.925l-4.25-4.2 1.4-1.4a1.92 1.92 0 0 1 1.413-.575 1.92 1.92 0 0 1 1.412.575l1.4 1.4c.383.383.583.846.6 1.388a1.806 1.806 0 0 1-.55 1.387L19.3 8.925ZM17.85 10.4 7.25 21H3v-4.25l10.6-10.6 4.25 4.25Zm-3.525-.725-.7-.7 1.4 1.4-.7-.7Z" />
+                </svg>
+                <span id="designer-mode-button-text">
+                    Edit in Designer
+                </span>
+            </button>
+        </div>
+        <div class="demo-device-switch demo-header-item">
+            <button id="desktop-button" onclick="dxDemo.Navigation.navigate('./')" class="dx-state-selected dashboard-demobutton">
+                    Desktop
+            </button>
+            <button id="mobile-button" onclick="dxDemo.Navigation.navigate('/Emulator')" class="dashboard-demobutton">
+                    Mobile
+            </button>
+        </div>
+        <div id="freetrial-button" class="demo-header-item" onclick="dxDemo.Navigation.navigate('https://go.devexpress.com/DevexpressDownload_UniversalTrial.aspx?fromDashboardToolbar=true')">
+            <button class="dashboard-demobutton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <style type="text/css">
+                        .editDashboardIcon {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path class="editDashboardIcon" d="M6 20c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 0 1 4 18v-3h2v3h12v-3h2v3c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0 1 18 20H6Zm6-4-5-5 1.4-1.45 2.6 2.6V4h2v8.15l2.6-2.6L17 11l-5 5Z" />
+                </svg>
+                <span id="designer-mode-button-text">
+                    Free Trial
+                </span>
+            </button>
+        </div>
+        <div class="demo-header-item">
+            <button id="info-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path class="st0" fill="#fff" d="M11 17h2v-6h-2v6Zm1-8a.968.968 0 0 0 .713-.288A.967.967 0 0 0 13 8a.97.97 0 0 0-.287-.713A.97.97 0 0 0 12 7a.967.967 0 0 0-.712.287A.968.968 0 0 0 11 8c0 .283.096.52.288.712A.965.965 0 0 0 12 9Zm0 13a9.733 9.733 0 0 1-3.9-.788 10.092 10.092 0 0 1-3.175-2.137c-.9-.9-1.612-1.958-2.137-3.175A9.733 9.733 0 0 1 2 12c0-1.383.263-2.683.788-3.9a10.092 10.092 0 0 1 2.137-3.175c.9-.9 1.958-1.613 3.175-2.138A9.743 9.743 0 0 1 12 2c1.383 0 2.683.262 3.9.787a10.105 10.105 0 0 1 3.175 2.138c.9.9 1.612 1.958 2.137 3.175A9.733 9.733 0 0 1 22 12a9.733 9.733 0 0 1-.788 3.9 10.092 10.092 0 0 1-2.137 3.175c-.9.9-1.958 1.612-3.175 2.137A9.733 9.733 0 0 1 12 22Zm0-2c2.233 0 4.125-.775 5.675-2.325C19.225 16.125 20 14.233 20 12c0-2.233-.775-4.125-2.325-5.675C16.125 4.775 14.233 4 12 4c-2.233 0-4.125.775-5.675 2.325C4.775 7.875 4 9.767 4 12c0 2.233.775 4.125 2.325 5.675C7.875 19.225 9.767 20 12 20Z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="demo-content">
+    @RenderBody()
+</div>

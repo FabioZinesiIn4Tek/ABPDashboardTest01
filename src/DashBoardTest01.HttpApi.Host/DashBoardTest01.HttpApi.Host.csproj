@@ -1,0 +1,105 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>DashBoardTest01</RootNamespace>
+    <PreserveCompilationReferences>true</PreserveCompilationReferences>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'DashBoardTest01.HttpApi.Host' " />
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="8.0.0" />
+    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="23.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="8.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.MultiTenancy" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Web.OpenIddict" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Web.Impersonation" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonX" Version="3.0.*-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DashBoardTest01.Application\DashBoardTest01.Application.csproj" />
+    <ProjectReference Include="..\DashBoardTest01.EntityFrameworkCore\DashBoardTest01.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\DashBoardTest01.HttpApi\DashBoardTest01.HttpApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="Exists('./openiddict.pfx')">
+    <None Remove="openiddict.pfx" />
+    <EmbeddedResource Include="openiddict.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controller\**" />
+    <Compile Remove="Logs\**" />
+    <Content Remove="Controller\**" />
+    <Content Remove="Logs\**" />
+    <EmbeddedResource Remove="Controller\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Controller\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Shared\_DemoLayout.cshtml" />
+    <None Include="Pages\Shared\_Layout.cshtml" />
+    <None Include="Pages\Shared\_Scripts.cshtml" />
+    <None Include="wwwroot\Content\chart-line-options-extension.js" />
+    <None Include="wwwroot\Content\d3-funnel\d3-funnel.min.js" />
+    <None Include="wwwroot\Content\d3-funnel\d3.v4.min.js" />
+    <None Include="wwwroot\Content\d3-funnel\funnel-d3-item.js" />
+    <None Include="wwwroot\Content\feedback.js" />
+    <None Include="wwwroot\Content\online-map-item.js" />
+    <None Include="wwwroot\Content\save-as-extension.js" />
+    <None Include="wwwroot\Content\scripts.js" />
+    <None Include="wwwroot\Content\sidebar\icons\close-button.svg" />
+    <None Include="wwwroot\Content\sidebar\icons\devexpress-logo.svg" />
+    <None Include="wwwroot\Content\sidebar\sidebar.js" />
+    <None Include="wwwroot\Content\webpage-item.js" />
+    <None Include="wwwroot\css\devextreme\fonts\Roboto-300.woff2" />
+    <None Include="wwwroot\css\devextreme\fonts\Roboto-400.woff2" />
+    <None Include="wwwroot\css\devextreme\fonts\Roboto-500.woff2" />
+    <None Include="wwwroot\css\devextreme\fonts\Roboto-700.woff2" />
+    <None Include="wwwroot\css\devextreme\icons\dxicons.woff2" />
+    <None Include="wwwroot\css\devextreme\icons\dxiconsfluent.woff2" />
+    <None Include="wwwroot\css\devextreme\icons\dxiconsmaterial.woff2" />
+    <None Include="wwwroot\css\main-22.svg" />
+    <None Include="wwwroot\css\main-5.svg" />
+    <None Include="wwwroot\css\main-6.svg" />
+    <None Include="wwwroot\css\main-7.svg" />
+    <None Include="wwwroot\css\main-8.svg" />
+    <None Include="wwwroot\css\main-9.svg" />
+    <None Include="wwwroot\css\richedit\icons\dxre-icons.woff2" />
+    <None Include="wwwroot\js\ace\ace.js" />
+    <None Include="wwwroot\js\ace\ext-language_tools.js" />
+    <None Include="wwwroot\js\ace\mode-json.js" />
+    <None Include="wwwroot\js\ace\worker-json.js" />
+    <None Include="wwwroot\js\dx-analytics-core.min.js" />
+    <None Include="wwwroot\js\dx-dashboard.min.js" />
+    <None Include="wwwroot\js\dx-querybuilder.min.js" />
+    <None Include="wwwroot\js\dx.all.js" />
+    <None Include="wwwroot\js\dx.richedit.min.js" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\jszip.min.js" />
+    <None Include="wwwroot\js\knockout.js" />
+  </ItemGroup>
+
+</Project>

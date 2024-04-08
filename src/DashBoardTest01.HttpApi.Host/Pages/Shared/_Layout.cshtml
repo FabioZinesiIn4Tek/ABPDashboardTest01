@@ -1,0 +1,41 @@
+﻿@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Hosting
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="~/Content/favicon.ico" />
+    <title>Web Dashboard - ASP.NET Core Dashboard Demo | DevExpress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This sample app demonstrates use of the DevExpress Web Dashboard control within an ASP.NET Core application." />
+
+
+    <link href="~/Content/styles.css" rel="stylesheet" asp-append-version="true"/>
+    <link href="~/Content/sidebar/sidebar.css" rel="stylesheet" asp-append-version="true"/>
+    <script>window.dxDemoName = "ASPNETCoreWebDashboardDemo"; window.dxDemoPlatform = "an ASP.NET Core 3 application";</script>
+    <script src="~/Content/feedback.js" asp-append-version="true"></script>
+    <script src="~/Content/sidebar/sidebar.js" asp-append-version="true"></script>
+
+    @{ var colorScheme = Context.Request.Query["colorSchema"].Count() > 0 ? Context.Request.Query["colorSchema"][0] : "light"; }
+
+    <link href="~/css/ace.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/theme/ambiance.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/theme/dreamweaver.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/devextreme/dx.common.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/devextreme/dx.@(colorScheme).css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/richedit/dx.richedit.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/analytics-core/dx-analytics.common.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/analytics-core/dx-analytics.@(colorScheme).css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/analytics-core/dx-querybuilder.css" rel="stylesheet" asp-append-version="true" />
+
+    <link href="~/css/dashboard/dx-dashboard.@(colorScheme).min.css" rel="stylesheet" asp-append-version="true" />
+
+</head>
+<body>
+    @Html.Raw(System.IO.File.ReadAllText(System.IO.Path.Combine(Hosting.WebRootPath, "Content", "sidebar", "sidebar.html")))
+
+    @RenderBody()
+
+    <script src="~/Content/scripts.js" asp-append-version="true"></script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+﻿.demo-info-sidebar .dx-popup-wrapper > .dx-overlay-content {
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
+}
+    .demo-info-sidebar .dx-popup-wrapper > .dx-overlay-content.dx-state-focused {
+        border: none;
+    }
+
+.demo-info-sidebar .dx-popup-content {
+    padding: 50px;
+}
+
+.demo-info-sidebar.demo-mobile-view .dx-popup-content {
+    padding: 20px;
+}
+
+.demo-info-sidebar.demo-mobile-view h1 {
+    margin-right: 50px;
+}
+
+
+.demo-info-sidebar .dx-overlay-wrapper {
+    background-color: rgba(155,155,155, 0.5);
+}
+
+.demo-info-sidebar h1 {
+    margin: 0px;
+    color: #579ADD;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.demo-info-sidebar h2 {
+    color: #579ADD;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 20px 0 0;
+}
+.demo-info-sidebar a {
+    color: #848484;
+}
+
+.demo-info-sidebar a, .demo-info-sidebar p {
+    font-size: 10pt;
+}
+    .demo-info-sidebar p.description {
+        line-height: 1.6;
+    }
+
+.demo-info-sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.demo-info-sidebar .logo {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 170px;
+    height: 28px;
+}
+
+.demo-info-sidebar .closeButton {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+    .demo-info-sidebar .closeButton img {
+        cursor: pointer;
+    }
+
+.feedback-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #579ADD;
+    height: 186px;
+    text-align: center;
+    transition: height, bottom 0.05s, 0.25s ease-out;
+    padding: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 150%;
+}
+    .feedback-area h2 {
+        color: white;
+        font-weight: 400;
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+.feedback-confirmation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 48px;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #579ADD;
+}
+    .feedback-confirmation svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .feedback-confirmation.visible {
+        opacity: 1;
+    }
+
+.demo-info-sidebar .feedback-area.comment {
+    height: 295px;
+}
+
+.feedback-area textarea {
+    resize: none;
+    width: 100%;
+    height: 148px;
+    border: none;
+    padding: 20px;
+    color: #5C5C5C;
+    font-size: 10pt;
+    margin: 20px 0 9px;
+}
+
+.feedback-area.closed {
+    bottom: -295px;
+}
+
+.feedback-buttons-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+.feedback-button {
+    cursor: pointer;
+}
+.feedback-buttons-section:hover .feedback-button {
+    opacity: 0.5;
+}
+    .feedback-buttons-section:hover .feedback-button:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+.feedback-positive-button {
+    width: 48px;
+    height: 48px;
+}
+.feedback-negative-button {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+
+.feedback-area .feedback-buttons {
+    text-align: right;
+}
+
+        .feedback-area .feedback-buttons .feedback-comment-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 100px;
+            height: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+        }
+            .feedback-area .feedback-buttons .feedback-comment-button:hover {
+                
+            }
+            .feedback-area .feedback-buttons .feedback-comment-button.submit-button {
+                border: 2px solid white;
+            }
+            .feedback-area .feedback-buttons .feedback-comment-button.submit-button.disabled {
+                opacity: 0.25;
+                cursor: default;
+            }
+
+
+.demo-info-sidebar.demo-mobile-view .feedback-area {
+    padding: 10px;
+    height: 156px;
+}
+    .demo-info-sidebar.demo-mobile-view .feedback-area.comment {
+        height: 240px;
+    }
+
+    .demo-info-sidebar.demo-mobile-view .feedback-area textarea {
+        height: 64px;
+    }
+
+
+.demo-info-sidebar .feedback-area .dx-loadindicator-icon .dx-loadindicator-segment {
+    background-color: white;
+}

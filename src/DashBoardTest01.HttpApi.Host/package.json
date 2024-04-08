@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "name": "my-app",
+  "private": true,
+  "dependencies": {
+    "@devexpress/analytics-core": "^23.2.5",
+    "@volo/abp.aspnetcore.mvc.ui.theme.leptonx": "~3.0.4",
+    "@volo/account": "~8.0.5",
+    "cldrjs": "^0.5.5",
+    "devexpress-dashboard": "^23.2.5",
+    "devextreme": "^23.2.5",
+    "devextreme-dist": "^23.2.5",
+    "globalize": "^1.7.0",
+    "jquery-ui-dist": "^1.13.2"
+  }
+}

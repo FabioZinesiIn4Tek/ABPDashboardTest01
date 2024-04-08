@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DashBoardTest01</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DashBoardTest01.Domain.Shared\DashBoardTest01.Domain.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Saas.Host.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.Pro.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Pro.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Public.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Account.Pro.Admin.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.LanguageManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.TextTemplateManagement.Application.Contracts" Version="8.0.5" />
+    <PackageReference Include="Volo.Abp.Gdpr.Application.Contracts" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <PackageReference Include="DevExpress.AspNetCore.Core">
+      <Version>23.2.5</Version>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

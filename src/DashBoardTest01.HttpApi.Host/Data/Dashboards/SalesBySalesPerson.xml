@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Sales by SalesPerson" />
+  <DataSources>
+    <SqlDataSource Name="SalesPerson" ComponentName="sqlDataSource1">
+      <Connection Name="nwind" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="SalesPerson">
+        <Tables>
+          <Table Name="SalesPerson" />
+        </Tables>
+        <Columns>
+          <Column Table="SalesPerson" Name="OrderID" />
+          <Column Table="SalesPerson" Name="Country" />
+          <Column Table="SalesPerson" Name="FirstName" />
+          <Column Table="SalesPerson" Name="LastName" />
+          <Column Table="SalesPerson" Name="ProductName" />
+          <Column Table="SalesPerson" Name="CategoryName" />
+          <Column Table="SalesPerson" Name="OrderDate" />
+          <Column Table="SalesPerson" Name="UnitPrice" />
+          <Column Table="SalesPerson" Name="Quantity" />
+          <Column Table="SalesPerson" Name="Discount" />
+          <Column Table="SalesPerson" Name="Extended Price" />
+          <Column Table="SalesPerson" Name="Sales Person" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="Pies 1" ShowCaption="false" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <DataItems>
+        <Measure DataMember="Extended Price" DefaultId="DataItem0" />
+        <Dimension DataMember="Sales Person" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem0" />
+      </Values>
+    </Pie>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" ShowCaption="false" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <DataItems>
+        <Measure DataMember="Extended Price" DefaultId="DataItem0" />
+        <Dimension DataMember="Sales Person" ColoringMode="Hue" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Pie ComponentName="pieDashboardItem2" Name="Pies 2" ShowCaption="false" DataSource="sqlDataSource1" DataMember="SalesPerson">
+      <ColoringOptions UseGlobalColors="false" />
+      <DataItems>
+        <Measure DataMember="Quantity" DefaultId="DataItem0" />
+        <Dimension DataMember="Sales Person" ColoringMode="Hue" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem0" />
+      </Values>
+    </Pie>
+  </Items>
+  <ColorScheme>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16266249">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="AndrewFuller" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16078644">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="AnneDodsworth" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16149581">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="JanetLeverling" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16156527">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="LauraCallahan" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16422014">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="MargaretPeacock" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16557458">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="MichaelSuyama" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16364452">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="NancyDavolio" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16568776">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="RobertKing" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="sqlDataSource1" DataMember="SalesPerson" Color="-16776187">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Sales Person" />
+          <Value Type="System.String" Value="StevenBuchanan" />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorScheme>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical">
+        <LayoutGroup>
+          <LayoutItem DashboardItem="pieDashboardItem1" />
+          <LayoutItem DashboardItem="pieDashboardItem2" />
+        </LayoutGroup>
+        <LayoutItem DashboardItem="chartDashboardItem1" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

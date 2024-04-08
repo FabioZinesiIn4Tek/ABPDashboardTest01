@@ -1,0 +1,53 @@
+﻿@page
+@model DevExpress.DashboardWeb.WorkingMode
+
+<!-- Add the following namespace usages: -->
+
+@using DevExpress.AspNetCore
+@using DevExpress.DashboardWeb
+@using DevExpress.DashboardAspNetCore
+
+@using DashBoardTest01.Bundling.Dashboard.DocumentViewer
+
+
+<script>
+    function getDashboardControl() {
+        return ASPNETCoreDashboard;
+    }
+</script>
+
+
+
+
+    @(Html.DevExpress().Dashboard("ASPNETCoreDashboard")
+        .WorkingMode(Model)
+        .Width("100%")
+        .Height("700px")
+        .ControllerName("DefaultDashboard")
+        .Extensions(extensions =>
+        {
+            extensions.UrlState(urlState =>
+            {
+                urlState.IncludeDashboardIdToUrl(true);
+                urlState.IncludeDashboardStateToUrl(true);
+            });
+            extensions.DataInspector(dataInspector =>
+            {
+                dataInspector.AllowInspectAggregatedData(true);
+                dataInspector.AllowInspectRawData(true);
+            });
+            extensions.DataSourceWizard(dataSourceWizard =>
+            {
+                dataSourceWizard.AllowCreateNewJsonConnection(true);
+            });
+        })
+        //.OnBeforeRender("onBeforeRender")
+        )
+
+
+
+
+@section Scripts {
+    <abp-style type="typeof(DevExpressDocumentViewerStyleContributor)" />
+    <abp-script type="typeof(DevExpressDocumentViewerScriptContributor)" />
+}
