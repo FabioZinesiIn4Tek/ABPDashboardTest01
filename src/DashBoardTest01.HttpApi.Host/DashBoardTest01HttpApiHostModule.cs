@@ -69,6 +69,10 @@ using ASPNETCoreDashboardAngular;
 using System.Drawing;
 using AspNetCoreDashboard;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 
 
@@ -92,6 +96,7 @@ public class DashBoardTest01HttpApiHostModule : AbpModule
 
     IFileProvider? fileProvider;// = context.Services //builder.Environment.ContentRootFileProvider;
     IConfiguration? configuration;// = context.Services.GetConfiguration();
+    IHttpContextAccessor httpContextAccessor;
 
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {
@@ -142,7 +147,12 @@ public class DashBoardTest01HttpApiHostModule : AbpModule
             });
         }
 
-        
+        context.Services.AddAntiforgery(options => {
+            // Set Cookie properties using CookieBuilder properties†.  
+            options.FormFieldName = "X-CSRF-TOKEN";
+            options.HeaderName = "X-CSRF-TOKEN";
+            options.SuppressXFrameOptionsHeader = false;
+        });
 
         ConfigureAuthentication(context);
         ConfigureUrls(configuration);
@@ -212,6 +222,7 @@ public class DashBoardTest01HttpApiHostModule : AbpModule
 
     private void ConfigureDashboard(ServiceConfigurationContext context)
     {
+        var hostingEnvironment = context.Services.GetHostingEnvironment();
         fileProvider = context.Services.GetHostingEnvironment().ContentRootFileProvider; //builder.Environment.ContentRootFileProvider;
         configuration = context.Services.GetConfiguration();
 
@@ -234,11 +245,12 @@ public class DashBoardTest01HttpApiHostModule : AbpModule
 
 
             //V2
-            DashboardConfigurator configurator = new DashboardConfigurator();
+            MultiTenantDashboardConfigurator configurator = new MultiTenantDashboardConfigurator(hostingEnvironment, httpContextAccessor);
+            //DashboardConfigurator configurator = new DashboardConfigurator();
             configurator.SetDashboardStorage(new CustomDashboardFileStorage(fileProvider.GetFileInfo("Data/Dashboards").PhysicalPath));
             configurator.SetDataSourceStorage(CreateDataSourceStorage());
             configurator.SetConnectionStringsProvider(new DashboardConnectionStringsProvider(configuration));
-
+            configurator.CustomPalette += Default_CustomPalette;
             configurator.ConfigureDataConnection += Configurator_ConfigureDataConnection;
 
             return configurator;
@@ -452,7 +464,7 @@ public class DashBoardTest01HttpApiHostModule : AbpModule
         // Registers the DevExpress middleware.            
         app.UseDevExpressControls();
         app.UseEndpoints(endpoints => {
-            endpoints.MapDashboardRoute("dashboardControl", "DefaultDashboard");
+            endpoints.MapDashboardRoute("api/dashboard", "DefaultDashboard");
             /*endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");*/

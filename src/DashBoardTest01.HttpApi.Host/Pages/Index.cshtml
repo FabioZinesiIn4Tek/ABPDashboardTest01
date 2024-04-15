@@ -16,6 +16,7 @@
 
 @model IndexModel
 @inject IHtmlLocalizer<DashBoardTest01Resource> L
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
 @inject IHtmlLocalizer<AccountResource> AccountLocalizer
 @inject ICurrentUser CurrentUser
 @inject IBrandingProvider BrandingProvider
@@ -43,6 +44,13 @@
     .Height("700px")
     .OnBeforeRender("onBeforeRender")
     .ControllerName("DefaultDashboard")
+        .BackendOptions(backendOptions =>
+        {
+            backendOptions.RequestHttpHeaders(headers =>
+            {
+                headers.Add("X-CSRF-TOKEN", Xsrf.GetAndStoreTokens(HttpContext).RequestToken);
+            });
+        })
     .Extensions(ext => ext.DataSourceWizard(dsw => dsw.AllowCreateNewJsonConnection(true)))
 )
 </body>

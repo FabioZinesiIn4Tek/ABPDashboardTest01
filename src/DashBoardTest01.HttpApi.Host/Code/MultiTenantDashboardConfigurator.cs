@@ -101,7 +101,7 @@ namespace AspNetCoreDashboard {
 
         // Custom data filtering for SqlDataSource
         private void DashboardConfigurator_CustomFilterExpression(object sender, CustomFilterExpressionWebEventArgs e) {
-            var userName = contextAccessor.HttpContext.Session.GetString("CurrentUser");
+            var userName = "Admin"; //var userName = contextAccessor.HttpContext.Session.GetString("CurrentUser");
 
             if (e.DashboardId == "SQLFilter" && e.QueryName == "Categories") {
                 if (userName == "User") {
